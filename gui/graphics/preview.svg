@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   width="157"
+   height="61"
+   sodipodi:docname="preview.svg"
+   inkscape:export-filename="/Users/ict4g/Desktop/evm/evmPro/src/evm2003/gui/graphics/preview.png"
+   inkscape:export-xdpi="89.980003"
+   inkscape:export-ydpi="89.980003">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6">
+    <filter
+       id="filter2989"
+       inkscape:label="Drop shadow"
+       width="1.5"
+       height="1.5"
+       x="-.25"
+       y="-.25">
+      <feGaussianBlur
+         id="feGaussianBlur2991"
+         in="SourceAlpha"
+         stdDeviation="2.5"
+         result="blur" />
+      <feColorMatrix
+         id="feColorMatrix2993"
+         result="bluralpha"
+         type="matrix"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.506 0 " />
+      <feOffset
+         id="feOffset2995"
+         in="bluralpha"
+         dx="5.6"
+         dy="5.6"
+         result="offsetBlur" />
+      <feMerge
+         id="feMerge2997">
+        <feMergeNode
+           id="feMergeNode2999"
+           in="offsetBlur" />
+        <feMergeNode
+           id="feMergeNode3001"
+           in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1303"
+     inkscape:window-height="681"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="5.3184713"
+     inkscape:cx="75.504421"
+     inkscape:cy="30.5"
+     inkscape:window-x="0"
+     inkscape:window-y="22"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <rect
+     style="color:#000000;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter2989);enable-background:accumulate"
+     id="rect2987"
+     width="149.32274"
+     height="55.276283"
+     x="1.1515895"
+     y="0.73349708"
+     ry="6.9095354" />
+  <text
+     xml:space="preserve"
+     style="font-size:24px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#fff9f9;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+     x="25.947306"
+     y="23.207186"
+     id="text3771"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3773"
+       x="25.947306"
+       y="23.207186">Preview</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:-1.57999992px;word-spacing:0px;fill:#fffbfb;fill-opacity:1;stroke:none;font-family:Sans"
+     x="75.644447"
+     y="44.641914"
+     id="text3775"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3777"
+       x="74.874451"
+       y="44.641914"
+       style="text-align:center;letter-spacing:-0.13999997000000000px;text-anchor:middle;font-weight:bold;-inkscape-font-specification:Sans Bold;font-size:18px"> My Vote</tspan></text>
+</svg>

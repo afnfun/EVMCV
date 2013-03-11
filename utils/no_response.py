@@ -53,7 +53,7 @@ def no_response():
 		elif (pos[0] >= 694 and pos[0] <= 957 and pos[1] >= 557 and pos[1] <= 642):
 		    action='cancel'
 		    loop=0
-    OnScreenKeyboard.image = load_image('keyboard.png', None, (769, 361));
+    """OnScreenKeyboard.image = load_image('keyboard.png', None, (769, 361));
     OnScreenKeyboard.xpos = (screen_width - 769) / 2 # difference between screen and keyboard widthes / 2 (centrelized)
     OnScreenKeyboard.ypos = (screen_height - 361) / 2 + 100 # (difference between screen and keyboard hight / 2) + 100 to give space for writ-in text
     OnScreenKeyboard.fontsize = 50
@@ -63,9 +63,9 @@ def no_response():
     OnScreenKeyboard.titlefont = pygame.font.SysFont('arial',OnScreenKeyboard.titlefontsize)
     OnScreenKeyboard.titletop = 150
     OnScreenKeyboard.cursor_width = 20
-    OnScreenKeyboard.max_length = 24
+    OnScreenKeyboard.max_length = 24"""
     while True:
-	keyboard = OnScreenKeyboard('','')
+	keyboard = OnScreenKeyboard(32,'Please enter admin password:','',0)
 	keyboard.edit()
         code = keyboard.text
         if (code=='AAAA' and action=='cancel'):

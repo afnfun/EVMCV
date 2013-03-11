@@ -8,6 +8,10 @@ from evm2003.utils.no_response import no_response
 import os, pygame, re, sys, string, random, datetime
 from pygame.locals import *
 
+
+#def verify(Ballot):
+	
+"""
 # Functions to create our resources
 def load_image(name, colorkey=-1, size=None):
 # Complete file path
@@ -81,11 +85,11 @@ def verify(date, country, State, county, ballot_number, precinct, serial,
                 screen.blit(Text, (100,vscount+n*vs))
                 pygame.display.update()
             else:
-                Text= contest_title[n] + ' : ' + 'President : '+ writeins[n][0]
+                Text= contest_title[n] + ' : ' + 'President : '+ writeins[n]
                 Text = font.render(Text,1, (10, 10, 10))
                 screen.blit(Text, (100,vscount+n*vs))
                 pygame.display.update()
-                Text = contest_title[n] + ' : ' + 'Vice President : '+ writeins[n][1]
+                Text = contest_title[n] + ' : ' + 'Vice President : '+ writeins[n]
                 Text = font.render(Text,1, (10, 10, 10))
                 vscount=vscount+vs
                 screen.blit(Text, (100,vscount+n*vs))
@@ -140,7 +144,7 @@ def verify(date, country, State, county, ballot_number, precinct, serial,
     while loop==1:
         now2 = datetime.datetime.now()
         diff = now2-now1
-        if (diff.seconds>=59):
+        if (diff.seconds>=100):
             action=no_response()
             return action # return 'cast_by_officer' or 'canceled_by_officer'    
         for event in pygame.event.get():
@@ -153,3 +157,4 @@ def verify(date, country, State, county, ballot_number, precinct, serial,
                     loop=0
                     return 'edit' 
     #return True
+"""

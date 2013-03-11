@@ -1,15 +1,15 @@
-"""This data should come from ballot-election.xml
+#"""This data should come from ballot-election.xml
 
-- But for now include a fallback definition if the XML is unavailable
-- Also, send the Python code to STDOUT if run as main (semi-Quine)
-"""
+#- But for now include a fallback definition if the XML is unavailable
+#- Also, send the Python code to STDOUT if run as main (semi-Quine)"""
 from os.path import isfile
+import sys
 xml_data = 'ballot-election.xml'
 
 if isfile('ballot-election.xml'):
     print 'exist xml file'
     from gnosis.xml.objectify import make_instance
-    ballot = make_instance('ballot-election.xml')
+    ballot = make_instance('ballot-election.xml') # imports the contents of ballot-election.xml
     contnames, cont = [], {}
     for contest in ballot.contest:
         name = contest.name
@@ -27,7 +27,7 @@ if isfile('ballot-election.xml'):
 #if no xml file, the deault one
 else:
     print 'no xml file'
-    
+    sys.exit(1)
     contnames = ["Presidency", "Senator", "U.S. Representative", "Treasurer",
                  "Attorney General", "Commis. of Education", "State Senate",
                  "State Assembly", "Transportation Initiative",

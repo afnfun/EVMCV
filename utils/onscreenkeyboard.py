@@ -2,18 +2,13 @@ import os, pygame, re, sys, string, random
 from pygame.locals import *
 sys.path.append(os.path.join('..', '..'))
 
-# screen configuration
-screen_width = 1280
-screen_height = 1024
-screen = pygame.display.set_mode( (screen_width, screen_height),0)
-
 # Functions to create our resources
+
 def load_image(name, colorkey=-1, size=None):
 # Complete file path
 	fullname = os.path.join('graphics', name)
-#load ballot image "graphics/ballot-mockup3.png"
 	try:
-		image = pygame.image.load(fullname) # future work, generate image dynamically from xml file
+		image = pygame.image.load(fullname) 
 	except pygame.error, message:
 		print 'Cannot load image:', fullname
 		raise SystemExit, message
@@ -29,24 +24,34 @@ def load_image(name, colorkey=-1, size=None):
 	return image
 
 class OnScreenKeyboard:
-	def __init__( self, title, text=''):
+	def __init__( self, maxChar, title, text='', show=1):
 		self.title = title
 		self.text = text
 		self.text_rect = None
+		self.image = load_image('keyboard.png', None, (769, 361));
+		self.xpos = (screen_width - 769) / 2 # difference between screen and keyboard widthes / 2 (centrelized)
+		self.ypos = (screen_height - 361) / 2 + 100 # (difference between screen and keyboard hight / 2) + 100 to give space for writ-in text
+		self.fontsize = 50
+		self.font = pygame.font.SysFont('arial',self.fontsize)
+		self.texttop = 300
+		self.titlefontsize = 36
+		self.titlefont = pygame.font.SysFont('arial',self.titlefontsize)
+		self.titletop = 150
+		self.cursor_width = 20
+		self.max_length = 24
+		self.maxChar = maxChar
+		self.show = show
 
 	def draw( self):
 		# Clear the screen
 		screen.fill( (255, 255, 255))
 
 		# Draw the title
-		titleobj = self.titlefont.render( 'There was no responce from voter during last 30 seconds.', 1, (200,0,0))
+		titleobj = self.titlefont.render( self.title, 1, (200,0,0))
 
 		# Center it at the top of the screen
 		titleleft = (screen_width - titleobj.get_width()) / 2
 		screen.blit( titleobj, (titleleft, self.titletop))
-                titleobj2 = self.titlefont.render( 'To cancel vote casting, enter security code:', 1, (200,0,0))
-                screen.blit( titleobj2, (titleleft, self.titletop+35))
-                
 
 		# Draw the keyboard
 		screen.blit( self.image, (self.xpos, self.ypos))
@@ -61,7 +66,15 @@ class OnScreenKeyboard:
 			screen.fill( (255, 255, 255), self.text_rect)
 
 		# Render the text
-		textobj = self.font.render( self.text, 0, (0,0,200))
+		if (self.show==0):
+			str=""
+			for i in self.text:
+				str=str+"*"
+		else:
+			str=self.text
+
+
+		textobj = self.font.render( str , 0, (0,0,200))
 
 		# Compute the x ccordintate for centering
 		textleft = (screen_width-textobj.get_width()-self.cursor_width) / 2
@@ -87,7 +100,7 @@ class OnScreenKeyboard:
 		self.text_rect = new_text_rect
 
 	def append_char( self, char):
-		if len(self.text) < self.max_length:
+		if len(self.text) < self.maxChar:
 			self.text = self.text + char
 			self.draw_text()
 
@@ -135,3 +148,9 @@ class OnScreenKeyboard:
 						else:
 							# It's the DONE key
 							return
+
+# screen configuration
+screen_width = 1280
+screen_height = 1024
+screen = pygame.display.set_mode( (screen_width, screen_height),0)
+
