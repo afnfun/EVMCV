@@ -437,16 +437,15 @@ class Ballot:
 						while ver==1:
 							for event in pygame.event.get():
 								if event.type is MOUSEBUTTONUP:
-									if (pos[0] >= 210 and pos[0] <= (210 + Ballot.button_back_size[0]) and
-										pos[1] >= 10 and pos[1] <= (10 + Ballot.button_back_size[1]) ) : # Back and Edit Vote
+									pos = pygame.mouse.get_pos()
+									if (pos[0] >= 210 and pos[0] < (210 + Ballot.button_back_size[0]) and
+										pos[1] >= 10 and pos[1] < (10 + Ballot.button_back_size[1]) ) : # Back and Edit Vote
 										self.draw()
-										print "back"
 										ver=0
-									if (pos[0] >= 220+Ballot.button_back_size[0] and pos[0] <= (220+Ballot.button_back_size[0]+Ballot.button_cast_size[0]) and
+									if (pos[0] >= 220+Ballot.button_back_size[0] and pos[0] < (220+Ballot.button_back_size[0]+Ballot.button_cast_size[0]) and
 										pos[1] >= 10 and pos[1] <= (10 + Ballot.button_cast_size[1]) ) : # cast vote
 										self.cast("voter")
 										self.cast_by_voter_screen()
-										print "cast"
 										return
 									else: continue
 								
