@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EVMPRoSetting>
+   <!--Fleeing Voter Timeout in Seconds-->
+   <FVTimeOut>200</FVTimeOut>
+</EVMPRoSetting>

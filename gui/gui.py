@@ -23,9 +23,10 @@ from utils.getxml import ballotxml
 from utils.no_response import no_response
 from utils.onscreenkeyboard import OnScreenKeyboard
 from gnosis.xml.objectify import XML_Objectify
+from os.path import isfile
 
-py_obj = XML_Objectify('coords.xml').make_instance()
-settings = XML_Objectify('EVMProSettings.xml').make_instance()
+py_obj = XML_Objectify('configuration_files/coords.xml').make_instance()
+settings = XML_Objectify('configuration_files/EVMCVSettings.xml').make_instance()
 
 
 # DRE information, this what will be inseted to vote
@@ -34,6 +35,20 @@ ElectionID=py_obj.Election.ElectionID.PCDATA
 PollingPlaceID=py_obj.Election.PollingPlaceID.PCDATA
 PollingMachineID=py_obj.Election.PollingStationID.PCDATA
 BallotID = py_obj.Election.BallotID.PCDATA
+ballot_image=py_obj.Election.BallotImage.PCDATA
+if isfile(os.path.join('configuration_files',py_obj.Election.TickImage_Selected.PCDATA)):
+	TickImage_Selected=py_obj.Election.TickImage_Selected.PCDATA
+else: TickImage_Selected=''
+if isfile(os.path.join('configuration_files',py_obj.Election.TickImage_Blank.PCDATA)):
+	TickImage_Blank=py_obj.Election.TickImage_Blank.PCDATA
+else: TickImage_Blank=''
+if isfile(os.path.join('configuration_files',py_obj.Election.TickImageOrdered_Selected.PCDATA)):
+	TickImageOrdered_Selected=py_obj.Election.TickImageOrdered_Selected.PCDATA
+else: TickImageOrdered_Selected=''
+if isfile(os.path.join('configuration_files',py_obj.Election.TickImageOrdered_Blank.PCDATA)):
+	TickImageOrdered_Blank=py_obj.Election.TickImageOrdered_Blank.PCDATA
+else: TickImageOrdered_Blank=''
+
 #printer output file
 psfile = 'ballot.ps'
 # FVT : Fleing Voter Time out setting
@@ -57,7 +72,10 @@ def blit_alpha(target, source, location, opacity):
 
 def load_image(name, colorkey=-1, size=None):
 # Complete file path
-	fullname = os.path.join('graphics', name)
+	if name == ballot_image or name == TickImage_Selected or name == TickImage_Blank or name == TickImageOrdered_Selected or name == TickImageOrdered_Blank:
+		fullname = os.path.join('configuration_files', name)
+	else:
+		fullname = os.path.join('graphics', name)
 #load ballot image "graphics/name"
 	try:
 		image = pygame.image.load(fullname) # future work, generate image dynamically from xml file
@@ -121,8 +139,8 @@ class Candidate:
 		if self.contest.ordered == 't':
 			#for i in range(self.contest.maxVotes):
 			if self.selected:
-				width, height = Ballot.box_selected.get_size()
-				screen.blit(Ballot.box_selected,(self.x,self.y))
+				width, height = Ballot.TickImageOrdered_Selected.get_size()
+				screen.blit(Ballot.TickImageOrdered_Selected,(self.x,self.y))
 				text_rect = (self.x+(0.180*height),self.y+(0.180*height),10,10) #set the locaton of text rectangle used to print order number
 				textobj = Ballot.order_font.render(`self.selected`, 1, (255, 0, 0))
 				screen.blit( textobj, text_rect)
@@ -130,17 +148,17 @@ class Candidate:
 				pygame.display.update(text_rect)
 
 			else:
-				width, height = Ballot.box_deselected.get_size()
-				screen.blit(Ballot.box_deselected,(self.x,self.y))
+				width, height = Ballot.TickImageOrdered_Blank.get_size()
+				screen.blit(Ballot.TickImageOrdered_Blank,(self.x,self.y))
 				pygame.display.update((self.x,self.y,width, height))
 
 			#text_rect = [self.x+20,self.y,130,16]
 		else:
-			width, height = Ballot.button_selected.get_size()
+			width, height = Ballot.TickImage_Selected.get_size()
 			if self.selected:
-				screen.blit( Ballot.button_selected,(self.x, self.y))
+				screen.blit( Ballot.TickImage_Selected,(self.x, self.y))
 			else:
-				screen.blit( Ballot.button_deselected,(self.x, self.y))
+				screen.blit( Ballot.TickImage_Blank,(self.x, self.y))
 			pygame.display.update((self.x,self.y,width,height))
 
 		if self.writein:
@@ -541,26 +559,20 @@ def set_video_mode():
 	global screen
 	Ballot.image_size = Ballot.image.get_size()
 	screen = pygame.display.set_mode( (Ballot.image_size[0],Ballot.image_size[1]),0)
-	pygame.display.set_caption('EVMPro')
+	pygame.display.set_caption('EVMCV')
 def setup_everything():
 	# Initialize the game module
 	pygame.init()
 	#define ballot image
-	#future work: image name comes from EML
-	Ballot.image = load_image('ballotmockup3.png',None)
-	
+	Ballot.image = load_image(ballot_image,None)
 	set_video_mode()
 
-	#define images
-	# deselected check box
-	Ballot.button_deselected = load_image('button-deselected.png',None)
-	# selected check box
-	Ballot.button_selected = load_image('button-selected.png',None)
-	# selected ordered check box
-	Ballot.box_selected = load_image('small_rect_full.png',None)
-	# deselected ordered check box
-	Ballot.box_deselected = load_image('small_rect_empty.png',None)
-	#Ballot.box_selected = load_image('small_rect_full.png',None,(Ballot.box_selected.get_size())).convert()
+	#define tick images for ordered and non ordered contests
+	if TickImage_Selected !='': Ballot.TickImage_Selected = load_image(TickImage_Selected,None)
+	if TickImage_Blank !='':Ballot.TickImage_Blank = load_image(TickImage_Blank,None)
+	if TickImageOrdered_Selected !='':Ballot.TickImageOrdered_Selected = load_image(TickImageOrdered_Selected,None)
+	if TickImageOrdered_Blank !='':Ballot.TickImageOrdered_Blank = load_image(TickImageOrdered_Blank,None)
+
 	Ballot.button_preview = load_image('previewbtm.png')
 	Ballot.button_preview_size = Ballot.button_preview.get_size()
 	Ballot.button_cast = load_image('castbtm.png')
@@ -569,7 +581,7 @@ def setup_everything():
 	Ballot.button_back_size = Ballot.button_back.get_size()
 	
 	# Set the size of the text inside order box
-	order_box_text_size = Ballot.box_selected.get_size()
+	order_box_text_size = Ballot.TickImageOrdered_Selected.get_size()
 	margin = (0.15*order_box_text_size[1])
 	# calculate pixile/size ration
 	mf = pygame.font.SysFont('arial', 20)
