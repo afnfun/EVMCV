@@ -17,7 +17,7 @@ import datetime
 #import gnosis
 from pygame.locals import *
 sys.path.append(os.path.join('..', '..'))
-from evm2003.Print.PaperBallot import PaperBallot
+#from evm2003.Print.PaperBallot import PaperBallot
 from evm2003.utils.getxml import ballotxml
 #from evm2003.utils.verification import verify
 from evm2003.utils.no_response import no_response
