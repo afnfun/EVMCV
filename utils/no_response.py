@@ -3,8 +3,8 @@ if sys.platform != 'win32':
     sys.path.append('../..')
 else:
     sys.path.append('..\\..')
-from evm2003.data.contests import cont
-from evm2003.utils.onscreenkeyboard import OnScreenKeyboard
+#from data.contests import cont
+from utils.onscreenkeyboard import OnScreenKeyboard
 import os, pygame, re, sys, string, random, datetime
 from pygame.locals import *
 
