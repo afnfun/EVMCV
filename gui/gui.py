@@ -4,6 +4,7 @@
 
 # Modified by Jan Karrman to generate XML with ballotxml() and connect with
 # the printing routines.
+# This version improved by Ali Al-Shammari
 
 # Import Modules
 import os
@@ -20,34 +21,22 @@ from evm2003.Print.PaperBallot import PaperBallot
 from evm2003.utils.getxml import ballotxml
 #from evm2003.utils.verification import verify
 from evm2003.utils.no_response import no_response
-from evm2003.data.contests import *
 from evm2003.utils.onscreenkeyboard import OnScreenKeyboard
 from gnosis.xml.objectify import XML_Objectify
 
 py_obj = XML_Objectify('coords.xml').make_instance()
 settings = XML_Objectify('EVMProSettings.xml').make_instance()
 
-#print
-#print
-#print
-#print
-#print
-#print
-#print
 
 # DRE information, this what will be inseted to vote
-ballot_number = 0
-country = py_obj.Election.Country.PCDATA
-state = py_obj.Election.City.PCDATA
-county = py_obj.Election.Region.PCDATA
-precinct = py_obj.Election.Precinct.PCDATA
-date = py_obj.Election.Date.PCDATA
-serial = py_obj.Election.PollingPlaceID.PCDATA+py_obj.Election.PollingStationID.PCDATA
-pollingPlaceID=py_obj.Election.PollingPlaceID.PCDATA
-pollingMachineID=py_obj.Election.PollingStationID.PCDATA
+VoteNumber=0
+ElectionID=py_obj.Election.ElectionID.PCDATA
+PollingPlaceID=py_obj.Election.PollingPlaceID.PCDATA
+PollingMachineID=py_obj.Election.PollingStationID.PCDATA
+BallotID = py_obj.Election.BallotID.PCDATA
 #printer output file
 psfile = 'ballot.ps'
-
+# FVT : Fleing Voter Time out setting
 FVTimeOut=int(settings.FVTimeOut.PCDATA)
 
 # screen configuration
@@ -390,7 +379,7 @@ class Ballot:
 				action=no_response() # called from utils/no_responce.py
 				if action=='canceled_by_officer': #either cancel by officer
 					# future work .. (label the vote as canceled and support the reason)
-					print "cancelofficer : "+str(ballot_number)
+					print "cancelofficer : "+str(VoteNumber)
 					reason='text message'
 					print "reason : "+reason
 					self.cancel_by_officer_screen()
@@ -446,13 +435,27 @@ class Ballot:
 										pos[1] >= 10 and pos[1] <= (10 + Ballot.button_cast_size[1]) ) : # cast vote
 										self.cast("voter")
 										self.cast_by_voter_screen()
+										print ballot.votes
+										print ballot.vmvotes
+										print ballot.writeins
+										for i , code in enumerate(ballot.vmvotes):
+											if code == 0: continue
+											if type(code) is list and len(code) !=0 and code.count(0) < len(code):
+												print i+1
+												for x in code:
+													if x == 0: continue
+													print x
+											if type(code) is not list:
+												print i+1
+												print code
 										return
+										#self.draw()
 									else: continue
 								
 
 
 						# Verification , from verify.py
-						#ver = verify (date, country, state, county, ballot_number, precinct, serial,'voting_machine', ballot.votes, ballot.writeins)
+						#ver = verify (date, country, state, county, VoteNumber, precinct, serial,'voting_machine', ballot.votes, ballot.writeins)
 						#if ver=='edit':
 						#	self.draw()
 						#	break
@@ -461,7 +464,7 @@ class Ballot:
 						#	self.cast_by_voter_screen()
 						#	return
 						#if ver=='canceled_by_officer':
-						#	print "cancelofficer : "+str(ballot_number)
+						#	print "cancelofficer : "+str(VoteNumber)
 						#	reason='text message'
 						#	print "reason : "+reason
 						#	self.cancel_by_officer_screen()
@@ -480,19 +483,19 @@ class Ballot:
 				for i in range(ballot.votes[item.number].count(0)):
 					ballot.votes[item.number].remove(0)
 		#Print the ballot
-		xml = ballotxml(date, country, state, county, ballot_number, precinct, serial, 'voting_machine', ballot.votes, ballot.writeins)
-		xmlfile = re.sub(' ', '_', "-".join(["v", str(date), country, state, county, str(precinct), str(ballot_number), str(serial)]) + ".xml")
-		file = open(xmlfile, 'w')
+		xml = ballotxml(ElectionID,PollingPlaceID,PollingMachineID, BallotID, VoteNumber, ballot.vmvotes,ballot.writeins)
+		xmlfile = re.sub(' ', '_', "-".join(["v", str(ElectionID),str(PollingPlaceID),str(PollingMachineID), str(VoteNumber)]) + ".xml")
+		file = open('cast_votes/'+xmlfile, 'w')
 		file.write(xml)
 		file.close()
 		if (actor=="voter"):
-			print "votercast : "+str(ballot_number)
+			print "votercast : "+str(VoteNumber)
 		if (actor=="officer"):
-			print "officercast :"+str(ballot_number)
+			print "officercast :"+str(VoteNumber)
 			print "reason :"+reason
-		p = PaperBallot(xmlfile)
-		p.PostscriptPrint(psfile)
-		del p
+		#p = PaperBallot(xmlfile)
+		#p.PostscriptPrint(psfile)
+		#del p
 		#
 	#introduction screen before ballot
 	def introduction_screen(self,contImage="continue.png"):
@@ -540,10 +543,8 @@ def set_video_mode():
 	screen = pygame.display.set_mode( (Ballot.image_size[0],Ballot.image_size[1]),0)
 	pygame.display.set_caption('EVMPro')
 def setup_everything():
-
 	# Initialize the game module
 	pygame.init()
-
 	#define ballot image
 	#future work: image name comes from EML
 	Ballot.image = load_image('ballotmockup3.png',None)
@@ -596,7 +597,7 @@ class SartMachine: #open poll
 					pos = pygame.mouse.get_pos()
 					if( pos[0] >= 480 and pos[0] < 725
 					and pos[1] >= 436 and pos[1] < 545):
-						print "openpoll : "+pollingPlaceID+pollingMachineID
+						print "openpoll : "+PollingPlaceID+PollingMachineID
 						return 1
 
 
@@ -621,7 +622,7 @@ class ControlElection: #activate vote or close poll
 					if( pos[0] >= 480 and pos[0] < 725
 						and pos[1] >= 574 and pos[1] < 683):
 							#close=self.close_vote_poll()
-							print "closecast : "+pollingPlaceID+pollingMachineID
+							print "closecast : "+PollingPlaceID+PollingMachineID
 							#
 							return -1
 	def open_vote_cast(self): # generate , store and return unique ballot number
@@ -630,13 +631,13 @@ class ControlElection: #activate vote or close poll
 		while 1:
 			# this loop to, generate random number, check if it used before, store and return number if it is unique,
 			# return -2 if it is not possible to find unique number that is not used before
-			ballot_number = random.randint(1000, 9999)
+			VoteNumber = random.randint(1000, 9999)
 			found=0
 			while 1:
 				#print "while"
 				id=rnd.readline()
 				#print id
-				if (str(ballot_number)+"\n"==id):
+				if (str(VoteNumber)+"\n"==id):
 					#print "equal"
 					rnd.seek(0)
 					found=1
@@ -647,7 +648,7 @@ class ControlElection: #activate vote or close poll
 					size = rnd.tell()
 					#print size
 					rnd.seek(size)
-					rnd.write(str(ballot_number)+"\n")
+					rnd.write(str(VoteNumber)+"\n")
 					rnd.close()
 					break
 			if (found !=1): break
@@ -660,7 +661,7 @@ class ControlElection: #activate vote or close poll
 		for line in lines: f.write(line)
 		f.close()
 		####
-		return ballot_number
+		return VoteNumber
 
 class CloseMachine:
 	def __init__(self, closeImage = "closeelection.png"):
@@ -689,16 +690,16 @@ controlelection = ControlElection()   #initialize control election screen (Activ
 closemachine = CloseMachine()         # initialize close poll screem
 openpoll = startmachine.open_poll()   # show open poll screen and return 1 if "Open Poll" selected
 while (openpoll==1):
-	ballot_number = controlelection.control_election() #show control screen, generate and return ballot number if "Activate Vote" selected, return -1 if "Close Poll" selected.
-	if (ballot_number!=0 and ballot_number!=-1 and ballot_number!=-2):
+	VoteNumber = controlelection.control_election() #show control screen, generate and return ballot number if "Activate Vote" selected, return -1 if "Close Poll" selected.
+	if (VoteNumber!=0 and VoteNumber!=-1 and VoteNumber!=-2):
 		ballot = Ballot()             #initialize ballot by loading the "coords" file. (see documentation to learn more about the file structure)
 		ballot.introduction_screen("continue.png") # show the introduction screen (page at which some introductions or instructions shown to voter before voting)
 		ballot.vote()                 # show ballot and cast vote
-		ballot_number=0               # reset ballot number
-	if (ballot_number== -1):          #
+		VoteNumber=0               # reset ballot number
+	if (VoteNumber== -1):          #
 		closemachine.close_machine()  # close the election (show close election screen)
 		sys.exit(0)
-	if (ballot_number== -2):          #
+	if (VoteNumber== -2):          #
 		#closemachine.close_machine()  # close the election (show close election screen)
 		print "rndballots file filled with reach maximum number of allowed ballot numbers"
 		sys.exit(0)
