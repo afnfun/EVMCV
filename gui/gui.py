@@ -16,12 +16,12 @@ import random
 import datetime
 #import gnosis
 from pygame.locals import *
-sys.path.append(os.path.join('..', '..'))
+sys.path.append(os.path.join('..'))
 #from evm2003.Print.PaperBallot import PaperBallot
-from evm2003.utils.getxml import ballotxml
+from utils.getxml import ballotxml
 #from evm2003.utils.verification import verify
-from evm2003.utils.no_response import no_response
-from evm2003.utils.onscreenkeyboard import OnScreenKeyboard
+from utils.no_response import no_response
+from utils.onscreenkeyboard import OnScreenKeyboard
 from gnosis.xml.objectify import XML_Objectify
 
 py_obj = XML_Objectify('coords.xml').make_instance()
