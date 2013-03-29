@@ -20,7 +20,7 @@ sys.path.append(os.path.join('..'))
 #from evm2003.Print.PaperBallot import PaperBallot
 from utils.getxml import ballotxml
 #from evm2003.utils.verification import verify
-from utils.no_response import no_response
+#from utils.no_response import no_response
 from utils.onscreenkeyboard import OnScreenKeyboard
 from gnosis.xml.objectify import XML_Objectify
 from os.path import isfile
@@ -55,8 +55,8 @@ psfile = 'ballot.ps'
 FVTimeOut=int(settings.FVTimeOut.PCDATA)
 
 # screen configuration
-screen_width = 1280
-screen_height = 1024
+#screen_width = 1280
+#screen_height = 1024
 #button_radius = 8
 
 # Functions to create our resources
@@ -72,13 +72,13 @@ def blit_alpha(target, source, location, opacity):
 
 def load_image(name, colorkey=-1, size=None):
 # Complete file path
-	if name == ballot_image or name == TickImage_Selected or name == TickImage_Blank or name == TickImageOrdered_Selected or name == TickImageOrdered_Blank:
+	if name == ballot_image or name== 'ballot_introduction.png' or name == TickImage_Selected or name == TickImage_Blank or name == TickImageOrdered_Selected or name == TickImageOrdered_Blank:
 		fullname = os.path.join('configuration_files', name)
 	else:
 		fullname = os.path.join('graphics', name)
 #load ballot image "graphics/name"
 	try:
-		image = pygame.image.load(fullname) # future work, generate image dynamically from xml file
+		image = pygame.image.load(fullname).convert()
 	except pygame.error, message:
 		print 'Cannot load image:', fullname
 		raise SystemExit, message
@@ -139,26 +139,26 @@ class Candidate:
 		if self.contest.ordered == 't':
 			#for i in range(self.contest.maxVotes):
 			if self.selected:
-				width, height = Ballot.TickImageOrdered_Selected.get_size()
-				screen.blit(Ballot.TickImageOrdered_Selected,(self.x,self.y))
+				width, height = control.TickImageOrderedSelected.get_size()
+				screen.blit(control.TickImageOrderedSelected,(self.x,self.y))
 				text_rect = (self.x+(0.180*height),self.y+(0.180*height),10,10) #set the locaton of text rectangle used to print order number
-				textobj = Ballot.order_font.render(`self.selected`, 1, (255, 0, 0))
+				textobj = control.order_font.render(`self.selected`, 1, (255, 0, 0))
 				screen.blit( textobj, text_rect)
 				pygame.display.update((self.x,self.y,width, height))
 				pygame.display.update(text_rect)
 
 			else:
-				width, height = Ballot.TickImageOrdered_Blank.get_size()
-				screen.blit(Ballot.TickImageOrdered_Blank,(self.x,self.y))
+				width, height = control.TickImageOrderedBlank.get_size()
+				screen.blit(control.TickImageOrderedBlank,(self.x,self.y))
 				pygame.display.update((self.x,self.y,width, height))
 
 			#text_rect = [self.x+20,self.y,130,16]
 		else:
-			width, height = Ballot.TickImage_Selected.get_size()
+			width, height = control.TickImageSelected.get_size()
 			if self.selected:
-				screen.blit( Ballot.TickImage_Selected,(self.x, self.y))
+				screen.blit( control.TickImageSelected,(self.x, self.y))
 			else:
-				screen.blit( Ballot.TickImage_Blank,(self.x, self.y))
+				screen.blit( control.TickImageBlank,(self.x, self.y))
 			pygame.display.update((self.x,self.y,width,height))
 
 		if self.writein:
@@ -380,9 +380,10 @@ class Ballot:
 		# All data (contest and options)loaded from XML coords to the software
 		
 	def draw( self):
-		screen.blit( Ballot.image, (0,0))
-		screen.blit(Ballot.button_preview,(210,10))
-		#bilt_alpha(screen,Ballot.button_preview,(210,10),128)
+		control.set_video_mode(control.BallotImage)
+		screen.blit( control.BallotImage, (0,0))
+		screen.blit( control.ButtonPreview,(210,10))
+		#bilt_alpha(screen,control.ButtonPreview,(210,10),128)
 		pygame.display.update()
 
 		for contest in self.contests:
@@ -394,18 +395,18 @@ class Ballot:
 			now2 = datetime.datetime.now() #read current time
 			diff = now2-now1
 			if (diff.seconds>=FVTimeOut): #if there is no action for 59 seconds
-				action=no_response() # called from utils/no_responce.py
+				action= control.no_response()
 				if action=='canceled_by_officer': #either cancel by officer
 					# future work .. (label the vote as canceled and support the reason)
 					print "cancelofficer : "+str(VoteNumber)
 					reason='text message'
 					print "reason : "+reason
-					self.cancel_by_officer_screen()
+					control.cancel_by_officer_screen()
 					return
 				elif action=='cast_by_officer':  #or cast by officer
 					reason="text message"
 					self.cast("officer",reason)
-					self.cast_by_officer_screen()
+					control.cast_by_officer_screen()
 					return
 				#
 			pygame.time.wait(200) # wait for 0.002 sec to read action
@@ -421,8 +422,8 @@ class Ballot:
 						# check if there is any active click in any contest
 						contest.click( pos[0], pos[1])
 					#
-					if (pos[0] >= 210 and pos[0] <= (210 + Ballot.button_preview_size[0]) and
-						pos[1] >= 10 and pos[1] <= (10 + Ballot.button_preview_size[1]) ) : # Preview
+					if (pos[0] >= 210 and pos[0] <= (210 + control.ButtonPreview_size[0]) and
+						pos[1] >= 10 and pos[1] <= (10 + control.ButtonPreview_size[1]) ) : # Preview
 
 						ver=1
 						verArea=[[0,0,0,0]]
@@ -430,29 +431,29 @@ class Ballot:
 							for cand in item.candidates:
 								if cand.selected != 0 :
 									verArea.append([cand.activeAreaX1,cand.activeAreaY1,cand.activeAreaX2,cand.activeAreaY2])
-						for y in range(Ballot.image_size[1]):
-							for x in range(Ballot.image_size[0]):
+						for y in range(control.BallotImage_size[1]):
+							for x in range(control.BallotImage_size[0]):
 								if x%2==0 and y%2==1:
 									skip=0
 									for area in verArea:
 										if (x>=int(area[0]) and x<=int(area[2]) and y>=int(area[1]) and y<=int(area[3])):
 											skip=1
 									if (skip==0): screen.set_at((x, y), (0, 125, 125))
-						screen.blit(Ballot.button_back, (210,10))
-						screen.blit(Ballot.button_cast, (220+Ballot.button_back_size[0],10))
+						screen.blit(control.ButtonBack, (210,10))
+						screen.blit(control.ButtonCast, (220+control.ButtonBack_size[0],10))
 						pygame.display.update()
 						while ver==1:
 							for event in pygame.event.get():
 								if event.type is MOUSEBUTTONUP:
 									pos = pygame.mouse.get_pos()
-									if (pos[0] >= 210 and pos[0] < (210 + Ballot.button_back_size[0]) and
-										pos[1] >= 10 and pos[1] < (10 + Ballot.button_back_size[1]) ) : # Back and Edit Vote
+									if (pos[0] >= 210 and pos[0] < (210 + control.ButtonBack_size[0]) and
+										pos[1] >= 10 and pos[1] < (10 + control.ButtonBack_size[1]) ) : # Back and Edit Vote
 										self.draw()
 										ver=0
-									if (pos[0] >= 220+Ballot.button_back_size[0] and pos[0] < (220+Ballot.button_back_size[0]+Ballot.button_cast_size[0]) and
-										pos[1] >= 10 and pos[1] <= (10 + Ballot.button_cast_size[1]) ) : # cast vote
+									if (pos[0] >= 220+control.ButtonBack_size[0] and pos[0] < (220+control.ButtonBack_size[0]+control.ButtonCast_size[0]) and
+										pos[1] >= 10 and pos[1] <= (10 + control.ButtonCast_size[1]) ) : # cast vote
 										self.cast("voter")
-										self.cast_by_voter_screen()
+										control.cast_by_voter_screen()
 										print ballot.votes
 										print ballot.vmvotes
 										print ballot.writeins
@@ -515,11 +516,106 @@ class Ballot:
 		#p.PostscriptPrint(psfile)
 		#del p
 		#
+	
+
+						
+
+
+
+
+class Control_Machine: #open poll
+# Function to set the video mode
+	#load ballot image
+	BallotImage = load_image(ballot_image,None)
+	#load ballot introduction
+	IntroImage = load_image('ballot_introduction.png', None)
+	#load tick images for ordered and non ordered contests
+	if TickImage_Selected !='': TickImageSelected = load_image(TickImage_Selected,None)
+	if TickImage_Blank !='': TickImageBlank = load_image(TickImage_Blank,None)
+	if TickImageOrdered_Selected !='': TickImageOrderedSelected = load_image(TickImageOrdered_Selected,None)
+	if TickImageOrdered_Blank !='': TickImageOrderedBlank = load_image(TickImageOrdered_Blank,None)
+
+	#load different screens images
+	CloseImage_message = load_image('closeelection_message.png', None)
+	CastV_message= load_image('cast_voter_message.png', None)
+	CastO_message= load_image('cast_officer_message.png', None)
+	CancelO_message= load_image('cancel_message.png', None)
+	no_responce_message= load_image('no_responce_message.png', None)
+	#buttons
+	ButtonPreview = load_image('previewbtn.png')
+	ButtonCast = load_image('castbtn.png')
+	ButtonBack = load_image('backbtn.png')
+	ButtonOpen = load_image('openbtn.png')
+	ButtonActive = load_image('activebtn.png')
+	ButtonClose = load_image('closebtn.png')
+	ButtonCastO = load_image('castobtn.png')
+	ButtonCancelO = load_image('cancelobtn.png')
+	#logo
+	Logo = load_image('logo1.png')
+	
+
+	def set_video_mode(self,image=''):
+		global screen
+		if image == self.BallotImage or image == self.IntroImage:
+			x,y = image.get_size()
+		else:
+			x,y=[0,0]
+		screen = pygame.display.set_mode( (x,y),pygame.BLEND_ADD,32)
+		pygame.display.set_caption('EVMCV')
+		screen.fill((255,255,255))
+		self.screen_size = screen.get_size()
+		print self.screen_size[0]
+	def setup_everything(self):
+		# Initialize the game module
+		os.environ['SDL_VIDEO_CENTERED'] = '1'
+		pygame.init()
+		#calculate the size of ballot image
+		self.BallotImage_size = self.BallotImage.get_size()
+		#calculate the size of control buttons
+		self.ButtonPreview_size = self.ButtonPreview.get_size()
+		self.ButtonCast_size = self.ButtonCast.get_size()
+		self.ButtonBack_size = self.ButtonBack.get_size()
+		self.Logo_size = self.Logo.get_size()
+		self.ButtonOpen_size = self.ButtonOpen.get_size()
+		self.ButtonActive_size = self.ButtonActive.get_size()
+		self.ButtonClose_size = self.ButtonClose.get_size()
+		self.ButtonCastO_size = self.ButtonCastO.get_size()
+		self.ButtonCancelO_size = self.ButtonCancelO.get_size()
+
+		# Set the size of the text to be inside Tick Image for ordered contest
+		order_box_text_size = control.TickImageOrderedSelected.get_size()
+		margin = (0.15*order_box_text_size[1])
+		# calculate pixile/size ration
+		mf = pygame.font.SysFont('arial', 20)
+		xw,yh = mf.size("0")
+		ratio = yh/20
+		#
+		order_font_size = int ((order_box_text_size[1] - (margin*2))/ratio)
+		if (order_font_size < 2): order_font_size =2
+		self.order_font = pygame.font.SysFont('arial', order_font_size)
+
+	def open_poll(self):
+		#global screen
+		self.set_video_mode()
+		logo_pos=[((self.screen_size[0]/2)-(self.Logo_size[0]/2)),50]
+		ButtonOpen_position=[((self.screen_size[0]/2)-(self.ButtonOpen_size[0]/2)),(50+self.Logo_size[1]+100)]
+		screen.blit( self.Logo, (logo_pos[0],logo_pos[1]))
+		screen.blit( self.ButtonOpen, (ButtonOpen_position[0],ButtonOpen_position[1]))
+		pygame.display.flip()
+		while 1:
+			pygame.time.wait(20)
+			for event in pygame.event.get():
+				if event.type is MOUSEBUTTONDOWN:
+					pos = pygame.mouse.get_pos()
+					if( pos[0] >= ButtonOpen_position[0] and pos[0] < (ButtonOpen_position[0]+self.ButtonOpen_size[0])
+					and pos[1] >= ButtonOpen_position[1] and pos[1] < (ButtonOpen_position[1]+self.ButtonOpen_size[1])):
+						print "openpoll : "+PollingPlaceID+PollingMachineID
+						return 1
 	#introduction screen before ballot
-	def introduction_screen(self,contImage="continue.png"):
+	def introduction_screen(self):
 		#introduction screen
-		intro_image = load_image(contImage, None)
-		screen.blit( intro_image, (0,0))
+		self.set_video_mode(self.IntroImage)
+		screen.blit( self.IntroImage,(0,0))
 		pygame.display.update()
 		now1 = datetime.datetime.now()
 		while 1:
@@ -534,109 +630,95 @@ class Ballot:
 				if event.type is KEYDOWN:
 					if event.key == K_ESCAPE: return 1
 					return 0
-	def cast_by_voter_screen(self):
-		cast= load_image('cast_voter.png', None,(screen_width, screen_height))
-		screen.blit( cast, (0,0))
+	def message_screen(self,message):
+		self.set_video_mode()
+		message_size = message.get_size()
+		logo_pos=[((self.screen_size[0]/2)-(self.Logo_size[0]/2)),50]
+		message_position=[((self.screen_size[0]/2)-(message_size[0]/2)),(50+self.Logo_size[1]+100)]
+		screen.blit( self.Logo, (logo_pos[0],logo_pos[1]))
+		screen.blit( message, (message_position[0],message_position[1]))
 		pygame.display.update()
+		return (50+self.Logo_size[1]+100+message_size[1])
+
+	def close_machine(self):
+		#close machine screen
+		self.message_screen(self.CloseImage_message)
+		pygame.time.delay(6000)
+		return 0
+	def cast_by_voter_screen(self):
+		self.message_screen(self.CastV_message)
 		pygame.time.delay(6000)
 		return
 	def cast_by_officer_screen(self):
-		cast= load_image('cast_officer.png', None,(screen_width, screen_height))
-		screen.blit( cast, (0,0))
-		pygame.display.update()
+		self.message_screen(self.CastO_message)
 		pygame.time.delay(6000)
 		return
 	def cancel_by_officer_screen(self):
-		cancel= load_image('cancel.png', None,(screen_width, screen_height))
-		screen.blit( cancel, (0,0))
-		pygame.display.update()
+		self.message_screen(self.CancelO_message)
 		pygame.time.delay(6000) #need to save log file
 		return
-
-						
-# Function to set the video mode
-def set_video_mode():
-	global screen
-	Ballot.image_size = Ballot.image.get_size()
-	screen = pygame.display.set_mode( (Ballot.image_size[0],Ballot.image_size[1]),0)
-	pygame.display.set_caption('EVMCV')
-def setup_everything():
-	# Initialize the game module
-	pygame.init()
-	#define ballot image
-	Ballot.image = load_image(ballot_image,None)
-	set_video_mode()
-
-	#define tick images for ordered and non ordered contests
-	if TickImage_Selected !='': Ballot.TickImage_Selected = load_image(TickImage_Selected,None)
-	if TickImage_Blank !='':Ballot.TickImage_Blank = load_image(TickImage_Blank,None)
-	if TickImageOrdered_Selected !='':Ballot.TickImageOrdered_Selected = load_image(TickImageOrdered_Selected,None)
-	if TickImageOrdered_Blank !='':Ballot.TickImageOrdered_Blank = load_image(TickImageOrdered_Blank,None)
-
-	Ballot.button_preview = load_image('previewbtm.png')
-	Ballot.button_preview_size = Ballot.button_preview.get_size()
-	Ballot.button_cast = load_image('castbtm.png')
-	Ballot.button_cast_size = Ballot.button_cast.get_size()
-	Ballot.button_back = load_image('backbtm.png')
-	Ballot.button_back_size = Ballot.button_back.get_size()
-	
-	# Set the size of the text inside order box
-	order_box_text_size = Ballot.TickImageOrdered_Selected.get_size()
-	margin = (0.15*order_box_text_size[1])
-	# calculate pixile/size ration
-	mf = pygame.font.SysFont('arial', 20)
-	xw,yh = mf.size("0")
-	ratio = yh/20 
-	#
-	order_font_size = int ((order_box_text_size[1] - (margin*2))/ratio)
-	if (order_font_size < 2): order_font_size =2
-	Ballot.order_font = pygame.font.SysFont('arial', order_font_size)
-	
-
-
-
-class SartMachine: #open poll
-	def __init__(self, openImage="open.png"):
-		self.open_image = load_image(openImage, None)
-	def open_poll(self):
-		#global screen
-		screen.blit( self.open_image, (0,0))
+	def no_response(self):
+		ref= self.message_screen(self.no_responce_message)
+		ButtonCastO_position=[((self.screen_size[0]/2)-(self.ButtonActive_size[0]/2)),(ref+50)]
+		ButtonCancelO_position=[((self.screen_size[0]/2)-(self.ButtonActive_size[0]/2)),(ref+50+self.ButtonCastO_size[1]+50)]
+		screen.blit( self.ButtonCastO, (ButtonCastO_position[0],ButtonCastO_position[1]))
+		screen.blit( self.ButtonCancelO, (ButtonCancelO_position[0],ButtonCancelO_position[1]))
 		pygame.display.update()
-		while 1:
+		loop=1
+		while loop==1:
 			pygame.time.wait(20)
 			for event in pygame.event.get():
 				if event.type is MOUSEBUTTONDOWN:
 					pos = pygame.mouse.get_pos()
-					if( pos[0] >= 480 and pos[0] < 725
-					and pos[1] >= 436 and pos[1] < 545):
-						print "openpoll : "+PollingPlaceID+PollingMachineID
-						return 1
+					if (pos[0] >= ButtonCastO_position[0] and pos[0] <= ButtonCastO_position[0]+self.ButtonCastO_size[0]
+						and pos[1] >= ButtonCastO_position[1] and pos[1] <= ButtonCastO_position[1]+self.ButtonCastO_size[1]):
+						action='cast'
+						loop=0
+					if (pos[0] >= ButtonCancelO_position[0] and pos[0] <= ButtonCancelO_position[0]+self.ButtonCancelO_size[0]
+						and pos[1] >= ButtonCancelO_position[1] and pos[1] <= ButtonCancelO_position[1]+self.ButtonCancelO_size[1]):
+						action='cancel'
+						loop=0
+		keyboard = OnScreenKeyboard(32,'Please enter admin password:','',0)
+		keyboard.edit()
+		code = keyboard.text
+		if (code=='AAAA' and action=='cancel'):
+			return 'canceled_by_officer'
+		elif (code=='AAAA' and action=='cast'):
+			return 'cast_by_officer'
 
 
-class ControlElection: #activate vote or close poll
-	def __init__(self, controlImage = "controlelection.png"):
-		self.control_image = load_image(controlImage, None)
+
+
 	def control_election(self):
 		#global screen
-		screen.blit( self.control_image, (0,0))
+		self.set_video_mode()
+		logo_pos=[((self.screen_size[0]/2)-(self.Logo_size[0]/2)),50]
+		print logo_pos
+		ButtonActive_position=[((self.screen_size[0]/2)-(self.ButtonActive_size[0]/2)),(50+self.Logo_size[1]+100)]
+		ButtonClose_position=[((self.screen_size[0]/2)-(self.ButtonActive_size[0]/2)),(ButtonActive_position[1]+self.ButtonActive_size[1]+50)]
+		screen.blit( self.Logo, (logo_pos[0],logo_pos[1]))
+		screen.blit( self.ButtonActive, (ButtonActive_position[0],ButtonActive_position[1]))
+		screen.blit( self.ButtonClose, (ButtonClose_position[0],ButtonClose_position[1]))
 		pygame.display.update()
 		while 1:
 			pygame.time.wait(20)
 			for event in pygame.event.get():
 				if event.type is MOUSEBUTTONDOWN:
 					pos = pygame.mouse.get_pos()
-					if( pos[0] >= 480 and pos[0] < 725
-					and pos[1] >= 436 and pos[1] < 545):
+					if( pos[0] >= ButtonActive_position[0] and pos[0] < (ButtonActive_position[0]+self.ButtonActive_size[0])
+						and pos[1] >= ButtonActive_position[1] and pos[1] < (ButtonActive_position[1]+self.ButtonActive_size[1])):
 						bn= self.open_vote_cast()
 						if (bn!=-2):
 							print "opencast : "+str(bn)
 						return bn
-					if( pos[0] >= 480 and pos[0] < 725
-						and pos[1] >= 574 and pos[1] < 683):
+					if( pos[0] >= ButtonClose_position[0] and pos[0] < (ButtonClose_position[0]+self.ButtonClose_size[0])
+						and pos[1] >= ButtonClose_position[1] and pos[1] < (ButtonClose_position[1]+self.ButtonClose_size[1])):
 							#close=self.close_vote_poll()
 							print "closecast : "+PollingPlaceID+PollingMachineID
 							#
 							return -1
+
+	#create a unique vote number
 	def open_vote_cast(self): # generate , store and return unique ballot number
 		rnd = open("rndballots","r+") # open file to store ballot id
 		x=0
@@ -675,41 +757,22 @@ class ControlElection: #activate vote or close poll
 		####
 		return VoteNumber
 
-class CloseMachine:
-	def __init__(self, closeImage = "closeelection.png"):
-		self.close_image = load_image(closeImage, None)
-	#introduction screen before ballot
-	def close_machine(self):
-		#introduction screen
-		screen.blit(self.close_image, (0,0))
-		pygame.display.update()
-		now1 = datetime.datetime.now()
-		while 1:
-			now2 = datetime.datetime.now()
-			diff = now2-now1
-			if (diff.seconds==380):
-				return 0
-			pygame.time.wait(20)
-			for event in pygame.event.get():
-				if event.type is MOUSEBUTTONDOWN:
-					return 0
-
+	
 
 #main code
-setup_everything()
-startmachine = SartMachine()          #initialize open poll screen
-controlelection = ControlElection()   #initialize control election screen (Activate vote, close poll)
-closemachine = CloseMachine()         # initialize close poll screem
-openpoll = startmachine.open_poll()   # show open poll screen and return 1 if "Open Poll" selected
+control = Control_Machine()          #initialize open poll screen
+control.setup_everything()
+openpoll = control.open_poll()   # show open poll screen and return 1 if "Open Poll" selected
 while (openpoll==1):
-	VoteNumber = controlelection.control_election() #show control screen, generate and return ballot number if "Activate Vote" selected, return -1 if "Close Poll" selected.
+	VoteNumber = control.control_election() #show control screen, generate and return ballot number if "Activate Vote" selected, return -1 if "Close Poll" selected.
 	if (VoteNumber!=0 and VoteNumber!=-1 and VoteNumber!=-2):
+		control.introduction_screen() # show the introduction screen (page at which some introductions or instructions shown to voter before voting)
 		ballot = Ballot()             #initialize ballot by loading the "coords" file. (see documentation to learn more about the file structure)
-		ballot.introduction_screen("continue.png") # show the introduction screen (page at which some introductions or instructions shown to voter before voting)
 		ballot.vote()                 # show ballot and cast vote
 		VoteNumber=0               # reset ballot number
 	if (VoteNumber== -1):          #
-		closemachine.close_machine()  # close the election (show close election screen)
+		control.close_machine()  # close the election (show close election screen)
+		pygame.quit()
 		sys.exit(0)
 	if (VoteNumber== -2):          #
 		#closemachine.close_machine()  # close the election (show close election screen)
