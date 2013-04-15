@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Coordinates>
+    <Election>
+        <ElectionID>0001</ElectionID>
+        <PollingPlaceID>0001</PollingPlaceID>
+        <PollingStationID>01</PollingStationID>
+        <BallotID>0001</BallotID>
+        <BallotImage>ballot.png</BallotImage>
+        <TickImage_Selected>TickImage_Selected.png</TickImage_Selected>
+        <TickImage_Blank>TickImage_Blank.png</TickImage_Blank>
+        <TickImageOrdered_Selected>0</TickImageOrdered_Selected>
+        <TickImageOrdered_Blank>0</TickImageOrdered_Blank>
+   </Election>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>0</MaxWriteIn>
+            <WriteInX1>0</WriteInX1>
+            <WriteInY1>0</WriteInY1>
+            <WriteInX2>0</WriteInX2>
+            <WriteInY2>0</WriteInY2>
+            <WriteInFontSize>0</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>160</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>146</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>195</OptionY2>
+                <CandidateID>00010001010101</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>214</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>200</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>249</OptionY2>
+                <CandidateID>00010001010102</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>268</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>254</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>303</OptionY2>
+                <CandidateID>00010001010103</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>320</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>306</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>355</OptionY2>
+                <CandidateID>00010001010104</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>374</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>360</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>409</OptionY2>
+                <CandidateID>00010001010105</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>426</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>412</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>461</OptionY2>
+                <CandidateID>00010001010106</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>480</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>466</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>515</OptionY2>
+                <CandidateID>00010001010107</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>534</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>520</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>569</OptionY2>
+                <CandidateID>00010001010108</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>586</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>572</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>621</OptionY2>
+                <CandidateID>00010001010109</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>640</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>626</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>675</OptionY2>
+                <CandidateID>00010001010110</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>694</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>680</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>729</OptionY2>
+                <CandidateID>00010001010111</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>746</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>732</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>781</OptionY2>
+                <CandidateID>00010001010112</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>800</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>786</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>835</OptionY2>
+                <CandidateID>00010001010113</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>854</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>840</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>889</OptionY2>
+                <CandidateID>00010001010114</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>906</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>892</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>941</OptionY2>
+                <CandidateID>00010001010115</CandidateID>
+            </Option>
+            <Option>
+                <TickX>346</TickX>
+                <TickY>960</TickY>
+                <OptionX1>343</OptionX1>
+                <OptionY1>946</OptionY1>
+                <OptionX2>687</OptionX2>
+                <OptionY2>995</OptionY2>
+                <CandidateID>00010001010116</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>0</MaxWriteIn>
+            <WriteInX1>0</WriteInX1>
+            <WriteInY1>0</WriteInY1>
+            <WriteInX2>0</WriteInX2>
+            <WriteInY2>0</WriteInY2>
+            <WriteInFontSize>0</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>294 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>294 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>315 </OptionY2>
+                <CandidateID>00010001010201</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>322 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>322 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>333 </OptionY2>
+                <CandidateID>00010001010202</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>350 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>350 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>371 </OptionY2>
+                <CandidateID>00010001010203</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>378 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>378 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>399 </OptionY2>
+                <CandidateID>00010001010204</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>406 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>406 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>427 </OptionY2>
+                <CandidateID>00010001010205</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>434 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>434 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>455 </OptionY2>
+                <CandidateID>00010001010206</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>462 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>462 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>483 </OptionY2>
+                <CandidateID>00010001010207</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>490 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>490 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>511 </OptionY2>
+                <CandidateID>00010001010208</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>518 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>518 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>539 </OptionY2>
+                <CandidateID>00010001010209</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>546 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>546 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>567 </OptionY2>
+                <CandidateID>00010001010210</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>574 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>574 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>595 </OptionY2>
+                <CandidateID>00010001010211</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>602 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>602 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>623 </OptionY2>
+                <CandidateID>00010001010212</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>630 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>630 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>651 </OptionY2>
+                <CandidateID>00010001010213</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>658 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>658 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>679 </OptionY2>
+                <CandidateID>00010001010214</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>686 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>686 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>707 </OptionY2>
+                <CandidateID>00010001010215</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>714 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>714 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>735 </OptionY2>
+                <CandidateID>00010001010216</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>742 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>742 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>763 </OptionY2>
+                <CandidateID>00010001010217</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>770 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>770 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>791 </OptionY2>
+                <CandidateID>00010001010218</CandidateID>
+            </Option>
+            <Option>
+                <TickX>151 </TickX>
+                <TickY>798 </TickY>
+                <OptionX1>151 </OptionX1>
+                <OptionY1>798 </OptionY1>
+                <OptionX2>204 </OptionX2>
+                <OptionY2>819 </OptionY2>
+                <CandidateID>00010001010219</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>294 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>294 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>315 </OptionY2>
+                <CandidateID>00010001010220</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>322 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>322 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>333 </OptionY2>
+                <CandidateID>00010001010221</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>350 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>350 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>371 </OptionY2>
+                <CandidateID>00010001010222</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>378 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>378 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>399 </OptionY2>
+                <CandidateID>00010001010223</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>406 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>406 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>427 </OptionY2>
+                <CandidateID>00010001010224</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>434 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>434 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>455 </OptionY2>
+                <CandidateID>00010001010225</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>462 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>462 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>483 </OptionY2>
+                <CandidateID>00010001010226</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>490 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>490 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>511 </OptionY2>
+                <CandidateID>00010001010227</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>518 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>518 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>539 </OptionY2>
+                <CandidateID>00010001010228</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>546 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>546 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>567 </OptionY2>
+                <CandidateID>00010001010229</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>574 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>574 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>595 </OptionY2>
+                <CandidateID>00010001010230</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>602 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>602 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>623 </OptionY2>
+                <CandidateID>00010001010231</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>630 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>630 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>651 </OptionY2>
+                <CandidateID>00010001010232</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>658 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>658 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>679 </OptionY2>
+                <CandidateID>00010001010233</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>686 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>686 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>707 </OptionY2>
+                <CandidateID>00010001010234</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>714 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>714 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>735 </OptionY2>
+                <CandidateID>00010001010235</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>742 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>742 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>763 </OptionY2>
+                <CandidateID>00010001010236</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>770 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>770 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>791 </OptionY2>
+                <CandidateID>00010001010237</CandidateID>
+            </Option>
+            <Option>
+                <TickX>89 </TickX>
+                <TickY>798 </TickY>
+                <OptionX1>89 </OptionX1>
+                <OptionY1>798 </OptionY1>
+                <OptionX2>142 </OptionX2>
+                <OptionY2>819 </OptionY2>
+                <CandidateID>00010001010238</CandidateID>
+            </Option> 
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>294 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>294 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>315 </OptionY2>
+                <CandidateID>00010001010239</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>322 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>322 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>333 </OptionY2>
+                <CandidateID>00010001010240</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>350 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>350 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>371 </OptionY2>
+                <CandidateID>00010001010241</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>378 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>378 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>399 </OptionY2>
+                <CandidateID>00010001010242</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>406 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>406 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>427 </OptionY2>
+                <CandidateID>00010001010243</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>434 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>434 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>455 </OptionY2>
+                <CandidateID>00010001010244</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>462 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>462 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>483 </OptionY2>
+                <CandidateID>00010001010245</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>490 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>490 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>511 </OptionY2>
+                <CandidateID>00010001010246</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>518 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>518 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>539 </OptionY2>
+                <CandidateID>00010001010247</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>546 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>546 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>567 </OptionY2>
+                <CandidateID>00010001010248</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>574 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>574 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>595 </OptionY2>
+                <CandidateID>00010001010249</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>602 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>602 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>623 </OptionY2>
+                <CandidateID>00010001010250</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>630 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>630 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>651 </OptionY2>
+                <CandidateID>00010001010251</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>658 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>658 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>679 </OptionY2>
+                <CandidateID>00010001010252</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>686 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>686 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>707 </OptionY2>
+                <CandidateID>00010001010253</CandidateID>
+            </Option>
+            <Option>
+                <TickX>27 </TickX>
+                <TickY>714 </TickY>
+                <OptionX1>27 </OptionX1>
+                <OptionY1>714 </OptionY1>
+                <OptionX2>80 </OptionX2>
+                <OptionY2>735 </OptionY2>
+                <CandidateID>00010001010254</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+</Coordinates>
