@@ -1,4 +1,5 @@
 import os, pygame, re, sys, string, random
+import datetime
 from pygame.locals import *
 sys.path.append(os.path.join('..', '..'))
 
@@ -108,12 +109,17 @@ class OnScreenKeyboard:
 		self.text = self.text[:-1]
 		self.draw_text()
 
-	def edit( self):
+	def edit(self,FVTout=-1):
 		self.draw()
-
+		now1 = datetime.datetime.now() #read current time
 		while 1:
+			now2 = datetime.datetime.now() #read current time
+			diff = now2-now1
+			if (diff.seconds>=FVTout and FVTout!=-1):
+				return 0
 			pygame.time.wait(20)
 			for event in pygame.event.get():
+				now1 = datetime.datetime.now() #reset timeout count
 				if event.type is KEYDOWN:
 					if event.key == K_ESCAPE:
 						return
