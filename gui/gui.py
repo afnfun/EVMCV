@@ -53,11 +53,10 @@ else: TickImageOrdered_Blank=''
 psfile = 'ballot.ps'
 # FVT : Fleing Voter Time out setting
 FVTimeOut=int(settings.FVTimeOut.PCDATA)
+introduction_time=30
 
 # screen configuration
-#screen_width = 1280
-#screen_height = 1024
-#button_radius = 8
+dre_pannel_height = 100
 
 # Functions to create our resources
 
@@ -112,7 +111,7 @@ def check_minumum_writein_area(x1,y1,x2,y2,maxWrTn, fontSize):
 		return 0
 	no_lines = int((area_height-(line_distance*2))/(yh+line_distance))
 	character_per_line = int((area_width-(line_distance*2))/xw)
-	#print "max write in: " + str(maxWrTn) + "maxAvailable : " + str(no_lines*character_per_line)
+	#
 	if (maxWrTn<=(no_lines*character_per_line)):
 		return 1
 	else:
@@ -152,7 +151,6 @@ class Candidate:
 				screen.blit(control.TickImageOrderedBlank,(self.x,self.y))
 				pygame.display.update((self.x,self.y,width, height))
 
-			#text_rect = [self.x+20,self.y,130,16]
 		else:
 			width, height = control.TickImageSelected.get_size()
 			if self.selected:
@@ -168,10 +166,17 @@ class Candidate:
 
 	def draw_writein(self, text, text_rect):
 		screen.fill( (255,255,255), text_rect)
+		mf = pygame.font.SysFont('arial', self.contest.wrtnFontSize)
+		xw,yh = mf.size("M")
 		if self.selected:
-			textobj = Ballot.writein_font.render( text, 0, (255, 0, 0))
-			screen.blit( textobj, text_rect)
-		pygame.display.update( text_rect)
+			character_per_row = int(text_rect[2]/xw)+1
+			text_length = len(text)
+			num_rows = int(text_length/character_per_row)
+			for i in range(num_rows+1):
+				textobj = Ballot.writein_font.render( text[(character_per_row*i):(character_per_row*(i+1))], 0, (255, 0, 0))
+				screen.blit( textobj, [text_rect[0],text_rect[1]+(yh*i+1),text_rect[2],yh])
+			pygame.display.update( text_rect)
+		
 
 
 	def toggle(self, value=1): # select, cancel, change (reset not included)
@@ -196,7 +201,7 @@ class Candidate:
 					if candidate != self and candidate.selected == value: # if found a previous selection then cancel, preparing to next step (select new one)
 						candidate.selected = 0
 						candidate.draw_button() # clear the tick, as drawing acandidate with selected=0 leads to clear it's tick
-						print 'canceled : ' + str(candidate.VmCandidateId)+"find me"# print verification message
+						print 'canceled : ' + str(candidate.VmCandidateId)# print verification message
 			else: #for multipe selection contests. i.e., maxvotes > 1
 				# Make sure there aren't too many selections
 				count = 0
@@ -219,8 +224,9 @@ class Candidate:
 			if (self.selected==value and (not self.writein)):
 				print 'selected : ' + str(self.VmCandidateId) # print verification message (non write in)
 			if self.writein:
-				self.contest.edit_writein()
+				status= self.contest.edit_writein()
 				print "write-in : " + str(self.VmCandidateId) +","+ ballot.writeins[self.contest.number] #print verification message (write in)
+				if status ==0: return 0
 				#
 			#
 		self.draw_button() # draw check box after togling
@@ -248,9 +254,10 @@ class Contest:
 		self.candidates.append( Candidate( self, x, y, x1, y1, x2, y2, number, VmCandidateId))
 		# The following hack causes the last option to be treated
 		# as a write-in whenever there are three or more options.
-		if len(self.candidates) > 2:
-			self.candidates[-2].writein = 0
-			self.candidates[-1].writein = 1
+		if self.maxWriteIn > 0: # if the contest supports writeins, otherwise keep it as default (writein=0)
+			if len(self.candidates) > 2:
+				self.candidates[-2].writein = 0
+				self.candidates[-1].writein = 1
 
 
 	def reset(self):
@@ -284,27 +291,34 @@ class Contest:
 						SelCandOrder = 0
 						for cand in self.candidates: # get the order of last selected candidate
 							if cand.selected > SelCandOrder: SelCandOrder = cand.selected # check the latest order and put in SelCandOrder
-						candidate.toggle( SelCandOrder + 1) #toggle selected candidate, the value in toggle = the order of last selected candidate +1
-					elif candidate.writein:
-						self.edit_writein()
+						status=candidate.toggle( SelCandOrder + 1) #toggle selected candidate, the value in toggle = the order of last selected candidate +1
+						if status==0: return 0
+					#elif candidate.writein:
+					#	self.edit_writein()
 		else: #for non ordered contests
 			for candidate in self.candidates:
 				if (x >= candidate.activeAreaX1 and
 					x < candidate.activeAreaX2 and
 					y >= candidate.activeAreaY1 and
 					y < candidate.activeAreaY2):
-					candidate.toggle() #does not required to have value in toggle
-				
+					status=candidate.toggle() #does not required to have value in toggle
+					if status==0: return 0
+		return 1
 	def draw(self):
 		for candidate in self.candidates:
 			if candidate.selected: candidate.draw_button()
 
 	def edit_writein(self):
 		#contname = contnames[self.number]
-		keyboard = OnScreenKeyboard(self.maxWriteIn,'Write-in Candidate for contest number '+str(self.number),ballot.writeins[self.number])
-		keyboard.edit()
+		keyboard = OnScreenKeyboard(self.maxWriteIn,'Write-in Candidate for contest number '+str(self.number+1),ballot.writeins[self.number])
+		remain_time = keyboard.edit(FVTimeOut)
 		ballot.writeins[self.number] = keyboard.text
-		self.ballot.draw()
+		if remain_time == 0:
+			now =datetime.datetime.now()
+			ballot.timeout(now,now,1)
+			return 0
+		else:
+			self.ballot.draw()
 
 class Ballot:
 	def __init__(self):
@@ -331,19 +345,6 @@ class Ballot:
 			else:
 				self.votes.append(0)
 				self.vmvotes.append(0)
-		#intialized lists will be as the following
-		#self.votes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, [], [0, 0, 0, 0, 0, 0, 0, 0]] 
-			#note that the elements of votes
-			#contest with MaxVotes=1, will get the value 0, later it will contain the order number of selected option. e.g., if second option selected then it's value will be 2.
-			#contest with MaxVotes=N>1, will get the value []. Later, value = the order number of selected option, maximum number of elements should not exceed MaxVotes.
-			#contest with MaxVotes=N>1 and ordered, will get the value [0,0,0,....,N]. Later, the value of each elements will contains the order number of selected option. elements order refers to selected option preference order. e.g., [3,5,1,2,4,8,7,6].
-		#self.vmvotes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, [], [0, 0, 0, 0, 0, 0, 0, 0]]
-			#note that the elements of vmvotes
-			#elements values will be replaced later by selected option Identifire
-		#self.writeins = ['','','','','','','','','','','','','']
-			#note that the elements of writeins
-			#elements values will be replaced later by writein text if the writein selected in any contest
-		#
 		#
 		# define the structure of date to be read form XML coords file
 		headParser = re.compile("([0-9]+) ([0-9]+) ([tf]) ([0-9]+) ([0-9]+) ([0-9]+) ([0-9]+) ([0-9]+) ([0-9]+) ([0-9]+) ([0-9]+) ([0-9]+) ([0-9]+)") # define the structure of contest parameters (minVotes maxVotes ordered (t or f) ReserX1 ResetY1 ReserX2 ResetY2 (reset button coordinates) Maximum writein writeinX1 WriteinY1 writeinX2 WriteinY2 (coordinates of writein area) Write in font size  \n)
@@ -362,7 +363,7 @@ class Ballot:
 			if (check_minumum_writein_area(int(writeInX1),int(writeInY1),int(writeInX2),int(writeInY2),int(maxWriteIn),int(wrtnFontSize)) ==0):
 				sys.exit("Maximum write-in characters of contest ("+ str(contnum)+ ") are larger then available space in contest write-in area defined in coords file. Either write-in font size is big or the are is small!!. Exit software...")
 			# append parameters to Contest list
-			contest = Contest( self, contnum,int(minVotes), int(maxVotes), ordered, int(resetX1),int(resetY1),int(resetX2),int(resetY2),int(maxWriteIn),int(writeInX1),int(writeInY1),int(writeInX2),int(writeInY2),int(wrtnFontSize))
+			contest = Contest( self, contnum,int(minVotes), int(maxVotes), ordered, int(resetX1),int(resetY1)+dre_pannel_height,int(resetX2),int(resetY2)+dre_pannel_height,int(maxWriteIn),int(writeInX1),int(writeInY1)+dre_pannel_height,int(writeInX2),int(writeInY2)+dre_pannel_height,int(wrtnFontSize))
 			#load the options data for the contest
 			candnum=1
 			for option in cnt.Options.Option:
@@ -373,41 +374,76 @@ class Ballot:
 					sys.exit("break, there is an error related to the data read from coords.xml file. Please check the structure of stored data. Check line:"+line2)
 				(x,y,x1,y1,x2,y2,VmCandidateId) = match.groups() # move line values to x,y
 				#add option parameter to Contest.Candidate
-				contest.add_candidate( int(x), int(y), int(x1),int(y1),int(x2),int(y2), candnum, str(VmCandidateId))
+				contest.add_candidate( int(x), int(y)+dre_pannel_height, int(x1),int(y1)+dre_pannel_height,int(x2),int(y2)+dre_pannel_height, candnum, str(VmCandidateId))
 				candnum+=1
 			self.contests.append(contest)
 			contnum+=1
 		# All data (contest and options)loaded from XML coords to the software
 		
-	def draw( self):
+	def draw(self):
 		control.set_video_mode(control.BallotImage)
-		screen.blit( control.BallotImage, (0,0))
+		screen.blit( control.BallotImage, (0,dre_pannel_height))
 		screen.blit( control.ButtonPreview,(210,10))
-		#bilt_alpha(screen,control.ButtonPreview,(210,10),128)
 		pygame.display.update()
 
 		for contest in self.contests:
 			contest.draw()
+	def timeout(self,time1,time2,force=0):
+		diff = time2-time1
+		if (diff.seconds>=FVTimeOut or force==1): #if there is no action for 59 seconds
+			action= control.no_response()
+			if action=='canceled_by_officer': #either cancel by officer
+				# future work .. (label the vote as canceled and support the reason)
+				print "cancelofficer : "+str(VoteNumber)
+				reason='text message'
+				print "reason : "+reason
+				control.cancel_by_officer_screen()
+				return 1
+			elif action=='cast_by_officer':  #or cast by officer
+				reason="text message"
+				self.cast("officer",reason)
+				control.cast_by_officer_screen()
+				return 1
+		return 0
+	def preview(self):
+		ver=1
+		verArea=[[0,0,0,0]]
+		for item in self.contests:
+			for cand in item.candidates:
+				if cand.selected != 0 :
+					verArea.append([cand.activeAreaX1,cand.activeAreaY1,cand.activeAreaX2,cand.activeAreaY2])
+		for y in range(control.BallotImage_size[1]):
+			for x in range(control.BallotImage_size[0]):
+				if x%2==0 and y%2==1:
+					skip=0
+					for area in verArea:
+						if (x>=int(area[0]) and x<=int(area[2]) and y>=int(area[1]) and y<=int(area[3])):
+							skip=1
+					if (skip==0): screen.set_at((x, y), (0, 125, 125))
+		screen.blit(control.ButtonBack, (210,10))
+		screen.blit(control.ButtonCast, (220+control.ButtonBack_size[0],10))
+		pygame.display.update()
+		now1 = datetime.datetime.now() #read current time
+		while ver==1:
+			now2 = datetime.datetime.now() #read current time
+			if (self.timeout(now1, now2)): return 'timeout'
+			for event in pygame.event.get():
+				if event.type is MOUSEBUTTONUP:
+					pos = pygame.mouse.get_pos()
+					if (pos[0] >= 210 and pos[0] < (210 + control.ButtonBack_size[0]) and
+						pos[1] >= 10 and pos[1] < (10 + control.ButtonBack_size[1]) ) : # Back and Edit Vote
+						return 'back'
+						#ver=0
+					if (pos[0] >= 220+control.ButtonBack_size[0] and pos[0] < (220+control.ButtonBack_size[0]+control.ButtonCast_size[0]) and
+						pos[1] >= 10 and pos[1] <= (10 + control.ButtonCast_size[1]) ) : # cast vote
+						return 'cast'
+					else: continue
 	def vote(self):
 		self.draw() # daraw main ballot
 		now1 = datetime.datetime.now() # get time at startup action
 		while 1: # voting loop
 			now2 = datetime.datetime.now() #read current time
-			diff = now2-now1
-			if (diff.seconds>=FVTimeOut): #if there is no action for 59 seconds
-				action= control.no_response()
-				if action=='canceled_by_officer': #either cancel by officer
-					# future work .. (label the vote as canceled and support the reason)
-					print "cancelofficer : "+str(VoteNumber)
-					reason='text message'
-					print "reason : "+reason
-					control.cancel_by_officer_screen()
-					return
-				elif action=='cast_by_officer':  #or cast by officer
-					reason="text message"
-					self.cast("officer",reason)
-					control.cast_by_officer_screen()
-					return
+			if (self.timeout(now1, now2)): return
 				#
 			pygame.time.wait(200) # wait for 0.002 sec to read action
 			for event in pygame.event.get():
@@ -420,79 +456,25 @@ class Ballot:
 					pos = pygame.mouse.get_pos()
 					for contest in self.contests:
 						# check if there is any active click in any contest
-						contest.click( pos[0], pos[1])
+						status=contest.click( pos[0], pos[1])
+						if status==0: return 0
+						else: now1 = datetime.datetime.now() # reset last action timer
 					#
 					if (pos[0] >= 210 and pos[0] <= (210 + control.ButtonPreview_size[0]) and
 						pos[1] >= 10 and pos[1] <= (10 + control.ButtonPreview_size[1]) ) : # Preview
+						#
+						prev = self.preview()
+						if prev=='back':
+							self.draw()
+							return
+						if prev=='cast':
+							self.cast("voter")
+							control.cast_by_voter_screen()
+							return
+						if prev=='timeout':
+							return
 
-						ver=1
-						verArea=[[0,0,0,0]]
-						for item in self.contests:
-							for cand in item.candidates:
-								if cand.selected != 0 :
-									verArea.append([cand.activeAreaX1,cand.activeAreaY1,cand.activeAreaX2,cand.activeAreaY2])
-						for y in range(control.BallotImage_size[1]):
-							for x in range(control.BallotImage_size[0]):
-								if x%2==0 and y%2==1:
-									skip=0
-									for area in verArea:
-										if (x>=int(area[0]) and x<=int(area[2]) and y>=int(area[1]) and y<=int(area[3])):
-											skip=1
-									if (skip==0): screen.set_at((x, y), (0, 125, 125))
-						screen.blit(control.ButtonBack, (210,10))
-						screen.blit(control.ButtonCast, (220+control.ButtonBack_size[0],10))
-						pygame.display.update()
-						while ver==1:
-							for event in pygame.event.get():
-								if event.type is MOUSEBUTTONUP:
-									pos = pygame.mouse.get_pos()
-									if (pos[0] >= 210 and pos[0] < (210 + control.ButtonBack_size[0]) and
-										pos[1] >= 10 and pos[1] < (10 + control.ButtonBack_size[1]) ) : # Back and Edit Vote
-										self.draw()
-										ver=0
-									if (pos[0] >= 220+control.ButtonBack_size[0] and pos[0] < (220+control.ButtonBack_size[0]+control.ButtonCast_size[0]) and
-										pos[1] >= 10 and pos[1] <= (10 + control.ButtonCast_size[1]) ) : # cast vote
-										self.cast("voter")
-										control.cast_by_voter_screen()
-										print ballot.votes
-										print ballot.vmvotes
-										print ballot.writeins
-										for i , code in enumerate(ballot.vmvotes):
-											if code == 0: continue
-											if type(code) is list and len(code) !=0 and code.count(0) < len(code):
-												print i+1
-												for x in code:
-													if x == 0: continue
-													print x
-											if type(code) is not list:
-												print i+1
-												print code
-										return
-										#self.draw()
-									else: continue
-								
-
-
-						# Verification , from verify.py
-						#ver = verify (date, country, state, county, VoteNumber, precinct, serial,'voting_machine', ballot.votes, ballot.writeins)
-						#if ver=='edit':
-						#	self.draw()
-						#	break
-						#if ver=='cast_by_voter':
-						#	self.cast("voter")
-						#	self.cast_by_voter_screen()
-						#	return
-						#if ver=='canceled_by_officer':
-						#	print "cancelofficer : "+str(VoteNumber)
-						#	reason='text message'
-						#	print "reason : "+reason
-						#	self.cancel_by_officer_screen()
-						#	return
-						#if ver=='cast_by_officer':
-						#	reason="text message"
-						#	self.cast("officer",reason)
-						#	self.cast_by_officer_screen()
-								
+						
 						#
 	def cast(self,actor, reason="None"):
 		"""Documentation"""
@@ -516,12 +498,6 @@ class Ballot:
 		#p.PostscriptPrint(psfile)
 		#del p
 		#
-	
-
-						
-
-
-
 
 class Control_Machine: #open poll
 # Function to set the video mode
@@ -558,19 +534,23 @@ class Control_Machine: #open poll
 		global screen
 		if image == self.BallotImage or image == self.IntroImage:
 			x,y = image.get_size()
+			if image == self.BallotImage: y=y+dre_pannel_height
 		else:
 			x,y=[0,0]
 		screen = pygame.display.set_mode( (x,y),pygame.BLEND_ADD,32)
 		pygame.display.set_caption('EVMCV')
 		screen.fill((255,255,255))
 		self.screen_size = screen.get_size()
-		print self.screen_size[0]
+		
 	def setup_everything(self):
 		# Initialize the game module
 		os.environ['SDL_VIDEO_CENTERED'] = '1'
 		pygame.init()
 		#calculate the size of ballot image
-		self.BallotImage_size = self.BallotImage.get_size()
+		BallotImageSize = self.BallotImage.get_size()
+		self.BallotImage_size = list(BallotImageSize)
+		self.BallotImage_size[1] = self.BallotImage_size[1] + dre_pannel_height # this to add to voting pannel sise
+		#
 		#calculate the size of control buttons
 		self.ButtonPreview_size = self.ButtonPreview.get_size()
 		self.ButtonCast_size = self.ButtonCast.get_size()
@@ -583,16 +563,16 @@ class Control_Machine: #open poll
 		self.ButtonCancelO_size = self.ButtonCancelO.get_size()
 
 		# Set the size of the text to be inside Tick Image for ordered contest
-		order_box_text_size = control.TickImageOrderedSelected.get_size()
-		margin = (0.15*order_box_text_size[1])
-		# calculate pixile/size ration
-		mf = pygame.font.SysFont('arial', 20)
-		xw,yh = mf.size("0")
-		ratio = yh/20
-		#
-		order_font_size = int ((order_box_text_size[1] - (margin*2))/ratio)
-		if (order_font_size < 2): order_font_size =2
-		self.order_font = pygame.font.SysFont('arial', order_font_size)
+		if TickImageOrdered_Selected !='':
+			order_box_text_size = control.TickImageOrderedSelected.get_size()
+			margin = (0.15*order_box_text_size[1])
+			# calculate pixile/size ration
+			mf = pygame.font.SysFont('arial', 20)
+			xw,yh = mf.size("0")
+			ratio = yh/20
+			order_font_size = int ((order_box_text_size[1] - (margin*2))/ratio)
+			if (order_font_size < 2): order_font_size =2
+			self.order_font = pygame.font.SysFont('arial', order_font_size)
 
 	def open_poll(self):
 		#global screen
@@ -621,16 +601,14 @@ class Control_Machine: #open poll
 		while 1:
 			now2 = datetime.datetime.now()
 			diff = now2-now1
-			if (diff.seconds==388):
-				return 0
+			if (diff.seconds==introduction_time):
+				return 
 			pygame.time.wait(20)
 			for event in pygame.event.get():
 				if event.type is MOUSEBUTTONDOWN:
-					return 0
-				if event.type is KEYDOWN:
-					if event.key == K_ESCAPE: return 1
-					return 0
-	def message_screen(self,message):
+					return 
+	#this functions shows an image mesaage in screen
+	def message_screen(self,message,message_period):
 		self.set_video_mode()
 		message_size = message.get_size()
 		logo_pos=[((self.screen_size[0]/2)-(self.Logo_size[0]/2)),50]
@@ -638,27 +616,33 @@ class Control_Machine: #open poll
 		screen.blit( self.Logo, (logo_pos[0],logo_pos[1]))
 		screen.blit( message, (message_position[0],message_position[1]))
 		pygame.display.update()
-		return (50+self.Logo_size[1]+100+message_size[1])
+		now1 = datetime.datetime.now()
+		while 1:
+			now2 = datetime.datetime.now()
+			diff = now2-now1
+			if (diff.seconds>=message_period):
+				return (50+self.Logo_size[1]+100+message_size[1])
+			pygame.time.wait(20)
+			for event in pygame.event.get():
+				if event.type is MOUSEBUTTONDOWN:
+					return (50+self.Logo_size[1]+100+message_size[1])
+		
 
 	def close_machine(self):
 		#close machine screen
-		self.message_screen(self.CloseImage_message)
-		pygame.time.delay(6000)
+		self.message_screen(self.CloseImage_message,5)
 		return 0
 	def cast_by_voter_screen(self):
-		self.message_screen(self.CastV_message)
-		pygame.time.delay(6000)
+		self.message_screen(self.CastV_message,5)
 		return
 	def cast_by_officer_screen(self):
-		self.message_screen(self.CastO_message)
-		pygame.time.delay(6000)
+		self.message_screen(self.CastO_message,5)
 		return
 	def cancel_by_officer_screen(self):
-		self.message_screen(self.CancelO_message)
-		pygame.time.delay(6000) #need to save log file
+		self.message_screen(self.CancelO_message,5)
 		return
 	def no_response(self):
-		ref= self.message_screen(self.no_responce_message)
+		ref= self.message_screen(self.no_responce_message,0)
 		ButtonCastO_position=[((self.screen_size[0]/2)-(self.ButtonActive_size[0]/2)),(ref+50)]
 		ButtonCancelO_position=[((self.screen_size[0]/2)-(self.ButtonActive_size[0]/2)),(ref+50+self.ButtonCastO_size[1]+50)]
 		screen.blit( self.ButtonCastO, (ButtonCastO_position[0],ButtonCastO_position[1]))
@@ -678,7 +662,7 @@ class Control_Machine: #open poll
 						and pos[1] >= ButtonCancelO_position[1] and pos[1] <= ButtonCancelO_position[1]+self.ButtonCancelO_size[1]):
 						action='cancel'
 						loop=0
-		keyboard = OnScreenKeyboard(32,'Please enter admin password:','',0)
+		keyboard = OnScreenKeyboard(32,'Please enter admin password: ( test password= AAAA )','',0)
 		keyboard.edit()
 		code = keyboard.text
 		if (code=='AAAA' and action=='cancel'):
@@ -686,14 +670,10 @@ class Control_Machine: #open poll
 		elif (code=='AAAA' and action=='cast'):
 			return 'cast_by_officer'
 
-
-
-
 	def control_election(self):
 		#global screen
 		self.set_video_mode()
 		logo_pos=[((self.screen_size[0]/2)-(self.Logo_size[0]/2)),50]
-		print logo_pos
 		ButtonActive_position=[((self.screen_size[0]/2)-(self.ButtonActive_size[0]/2)),(50+self.Logo_size[1]+100)]
 		ButtonClose_position=[((self.screen_size[0]/2)-(self.ButtonActive_size[0]/2)),(ButtonActive_position[1]+self.ButtonActive_size[1]+50)]
 		screen.blit( self.Logo, (logo_pos[0],logo_pos[1]))
@@ -728,11 +708,8 @@ class Control_Machine: #open poll
 			VoteNumber = random.randint(1000, 9999)
 			found=0
 			while 1:
-				#print "while"
 				id=rnd.readline()
-				#print id
 				if (str(VoteNumber)+"\n"==id):
-					#print "equal"
 					rnd.seek(0)
 					found=1
 					x=x+1
@@ -740,7 +717,6 @@ class Control_Machine: #open poll
 					break
 				if (id==""):
 					size = rnd.tell()
-					#print size
 					rnd.seek(size)
 					rnd.write(str(VoteNumber)+"\n")
 					rnd.close()
@@ -758,7 +734,6 @@ class Control_Machine: #open poll
 		return VoteNumber
 
 	
-
 #main code
 control = Control_Machine()          #initialize open poll screen
 control.setup_everything()
@@ -775,6 +750,6 @@ while (openpoll==1):
 		pygame.quit()
 		sys.exit(0)
 	if (VoteNumber== -2):          #
-		#closemachine.close_machine()  # close the election (show close election screen)
+		#exit software if there are no available ballot numbers
 		print "rndballots file filled with reach maximum number of allowed ballot numbers"
 		sys.exit(0)
