@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVMPRoSetting>
    <!--Fleeing Voter Timeout in Seconds-->
-   <FVTimeOut>10</FVTimeOut>
+   <FVTimeOut>5</FVTimeOut>
+   <Intro_Time>20</Intro_Time>
+   <Screen_Width>1024</Screen_Width>
+   <Screen_Height>800</Screen_Height>
+   
 </EVMPRoSetting>
