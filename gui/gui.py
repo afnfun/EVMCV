@@ -533,15 +533,16 @@ class Control_Machine: #open poll
 
 	def set_video_mode(self,image=''):
 		global screen
+		#
+		self.screen_size = [screen_width,screen_height]
 		if image == self.BallotImage or image == self.IntroImage:
 			x,y = image.get_size()
 			if image == self.BallotImage: y=y+dre_pannel_height
 		else:
-			x,y=[0,0]
-		screen = pygame.display.set_mode( (x,y),pygame.BLEND_ADD,32)
+			x,y=self.screen_size
+		screen = pygame.display.set_mode([x,y],pygame.BLEND_ADD,0)
 		pygame.display.set_caption('EVMCV')
 		screen.fill((255,255,255))
-		self.screen_size = screen.get_size()
 		
 	def setup_everything(self):
 		# Initialize the game module
