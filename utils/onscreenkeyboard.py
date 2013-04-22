@@ -2,6 +2,13 @@ import os, pygame, re, sys, string, random
 import datetime
 from pygame.locals import *
 sys.path.append(os.path.join('..', '..'))
+from gnosis.xml.objectify import XML_Objectify
+
+settings = XML_Objectify('configuration_files/EVMCVSettings.xml').make_instance()
+# screen configuration
+screen_width=int(settings.Screen_Width.PCDATA)
+screen_height=int(settings.Screen_Height.PCDATA)
+screen = pygame.display.set_mode( (screen_width, screen_height),0)
 
 # Functions to create our resources
 
@@ -34,10 +41,10 @@ class OnScreenKeyboard:
 		self.ypos = (screen_height - 361) / 2 + 100 # (difference between screen and keyboard hight / 2) + 100 to give space for writ-in text
 		self.fontsize = 50
 		self.font = pygame.font.SysFont('arial',self.fontsize)
-		self.texttop = 300
 		self.titlefontsize = 36
 		self.titlefont = pygame.font.SysFont('arial',self.titlefontsize)
-		self.titletop = 150
+		self.titletop = (screen_height - 361) / 2 - 100
+		self.texttop = (screen_height - 361) / 2 
 		self.cursor_width = 20
 		self.max_length = 24
 		self.maxChar = maxChar
@@ -155,8 +162,5 @@ class OnScreenKeyboard:
 							# It's the DONE key
 							return
 
-# screen configuration
-screen_width = 1280
-screen_height = 1024
-screen = pygame.display.set_mode( (screen_width, screen_height),0)
+
 
