@@ -53,8 +53,9 @@ else: TickImageOrdered_Blank=''
 psfile = 'ballot.ps'
 # FVT : Fleing Voter Time out setting
 FVTimeOut=int(settings.FVTimeOut.PCDATA)
-introduction_time=30
-
+introduction_time=int(settings.Intro_Time.PCDATA)
+screen_width=int(settings.Screen_Width.PCDATA)
+screen_height=int(settings.Screen_Height.PCDATA)
 # screen configuration
 dre_pannel_height = 100
 
