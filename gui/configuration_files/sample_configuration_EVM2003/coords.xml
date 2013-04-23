@@ -29,82 +29,82 @@
         <WriteIn>
             <MaxWriteIn>48</MaxWriteIn>
             <WriteInX1>90</WriteInX1>
-            <WriteInY1>957</WriteInY1>
+            <WriteInY1>857</WriteInY1>
             <WriteInX2>343</WriteInX2>
-            <WriteInY2>1000</WriteInY2>
+            <WriteInY2>900</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>70</TickX>
-                <TickY>583</TickY>
+                <TickY>483</TickY>
                 <OptionX1>65</OptionX1>
-                <OptionY1>557</OptionY1>
+                <OptionY1>457</OptionY1>
                 <OptionX2>335</OptionX2>
-                <OptionY2>607</OptionY2>
+                <OptionY2>507</OptionY2>
                 <CandidateID>00010001010101</CandidateID>
             </Option>
             <Option>
                 <TickX>71</TickX>
-                <TickY>634</TickY>
+                <TickY>534</TickY>
                 <OptionX1>65</OptionX1>
-                <OptionY1>608</OptionY1>
+                <OptionY1>508</OptionY1>
                 <OptionX2>335</OptionX2>
-                <OptionY2>658</OptionY2>
+                <OptionY2>558</OptionY2>
                 <CandidateID>00010001010102</CandidateID>
             </Option>
             <Option>
                 <TickX>72</TickX>
-                <TickY>691</TickY>
+                <TickY>591</TickY>
                 <OptionX1>65 </OptionX1>
-                <OptionY1>662 </OptionY1>
+                <OptionY1>562 </OptionY1>
                 <OptionX2>335 </OptionX2>
-                <OptionY2>712 </OptionY2>
+                <OptionY2>612 </OptionY2>
                 <CandidateID>00010001010103</CandidateID>
             </Option>
             <Option>
                 <TickX>71</TickX>
-                <TickY>743 </TickY>
+                <TickY>643 </TickY>
                 <OptionX1>65</OptionX1>
-                <OptionY1>716</OptionY1>
+                <OptionY1>616</OptionY1>
                 <OptionX2>335</OptionX2>
-                <OptionY2>766</OptionY2>
+                <OptionY2>666</OptionY2>
                 <CandidateID>00010001010104</CandidateID>
             </Option>
             <Option>
                 <TickX>74 </TickX>
-                <TickY>793 </TickY>
+                <TickY>693 </TickY>
                 <OptionX1>65</OptionX1>
-                <OptionY1>768</OptionY1>
+                <OptionY1>668</OptionY1>
                 <OptionX2>335</OptionX2>
-                <OptionY2>818</OptionY2>
+                <OptionY2>718</OptionY2>
                 <CandidateID>00010001010105</CandidateID>
             </Option>
             <Option>
                 <TickX>75</TickX>
-                <TickY>856</TickY>
+                <TickY>756</TickY>
                 <OptionX1>65</OptionX1>
-                <OptionY1>828</OptionY1>
+                <OptionY1>728</OptionY1>
                 <OptionX2>335</OptionX2>
-                <OptionY2>858</OptionY2>
+                <OptionY2>778</OptionY2>
                 <CandidateID>00010001010106</CandidateID>
             </Option>
             <Option>
                 <TickX>74</TickX>
-                <TickY>908</TickY>
+                <TickY>808</TickY>
                 <OptionX1>65</OptionX1>
-                <OptionY1>886</OptionY1>
+                <OptionY1>786</OptionY1>
                 <OptionX2>335</OptionX2>
-                <OptionY2>936</OptionY2>
+                <OptionY2>836</OptionY2>
                 <CandidateID>00010001010107</CandidateID>
             </Option>
             <Option>
                 <TickX>72</TickX>
-                <TickY>975</TickY>
+                <TickY>875</TickY>
                 <OptionX1>65</OptionX1>
-                <OptionY1>940</OptionY1>
+                <OptionY1>840</OptionY1>
                 <OptionX2>335</OptionX2>
-                <OptionY2>1000</OptionY2>
+                <OptionY2>900</OptionY2>
                 <CandidateID>00010001010108</CandidateID>
             </Option>
         </Options>
@@ -122,82 +122,82 @@
         <WriteIn>
             <MaxWriteIn>24</MaxWriteIn>
             <WriteInX1>376</WriteInX1>
-            <WriteInY1>361</WriteInY1>
+            <WriteInY1>261</WriteInY1>
             <WriteInX2>632</WriteInX2>
-            <WriteInY2>381</WriteInY2>
+            <WriteInY2>281</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>357 </TickX>
-                <TickY>202 </TickY>
+                <TickY>102 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>198 </OptionY1>
+                <OptionY1>98 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>223 </OptionY2>
+                <OptionY2>123 </OptionY2>
                 <CandidateID>00010001010201</CandidateID>
             </Option>
             <Option>
                 <TickX>356 </TickX>
-                <TickY>227 </TickY>
+                <TickY>127 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>226 </OptionY1>
+                <OptionY1>126 </OptionY1>
                 <OptionX2>637  </OptionX2>
-                <OptionY2>245</OptionY2>
+                <OptionY2>145</OptionY2>
                 <CandidateID>00010001010202</CandidateID>
             </Option>
             <Option>
                 <TickX>356 </TickX>
-                <TickY>249 </TickY>
+                <TickY>149 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>248 </OptionY1>
+                <OptionY1>148 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>268</OptionY2>
+                <OptionY2>168</OptionY2>
                 <CandidateID>00010001010203</CandidateID>
             </Option>
             <Option>
                 <TickX>357 </TickX>
-                <TickY>272 </TickY>
+                <TickY>172 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>271 </OptionY1>
+                <OptionY1>171 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>290</OptionY2>
+                <OptionY2>190</OptionY2>
                 <CandidateID>00010001010204</CandidateID>
             </Option>
             <Option>
                 <TickX>357 </TickX>
-                <TickY>294 </TickY>
+                <TickY>194 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>293 </OptionY1>
+                <OptionY1>193 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>312</OptionY2>
+                <OptionY2>212</OptionY2>
                 <CandidateID>00010001010205</CandidateID>
             </Option>
             <Option>
                 <TickX>358 </TickX>
-                <TickY>315 </TickY>
+                <TickY>215 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>315 </OptionY1>
+                <OptionY1>215 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>334 </OptionY2>
+                <OptionY2>234 </OptionY2>
                 <CandidateID>00010001010206</CandidateID>
             </Option>
             <Option>
                 <TickX>360 </TickX>
-                <TickY>338 </TickY>
+                <TickY>238 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>337 </OptionY1>
+                <OptionY1>237 </OptionY1>
                 <OptionX2>637  </OptionX2>
-                <OptionY2>356</OptionY2>
+                <OptionY2>256</OptionY2>
                 <CandidateID>00010001010207</CandidateID>
             </Option>
             <Option>
                 <TickX>359 </TickX>
-                <TickY>363 </TickY>
+                <TickY>263 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>361 </OptionY1>
+                <OptionY1>261 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>399 </OptionY2>
+                <OptionY2>299 </OptionY2>
                 <CandidateID>00010001010208</CandidateID>
             </Option>
         </Options>
@@ -215,37 +215,37 @@
         <WriteIn>
             <MaxWriteIn>24</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
-            <WriteInY1>501 </WriteInY1>
+            <WriteInY1>401 </WriteInY1>
             <WriteInX2>632 </WriteInX2>
-            <WriteInY2>521</WriteInY2>
+            <WriteInY2>421</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>354 </TickX>
-                <TickY>457 </TickY>
+                <TickY>357 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>452 </OptionY1>
+                <OptionY1>352 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>474</OptionY2>
+                <OptionY2>374</OptionY2>
                 <CandidateID>00010001010301</CandidateID>
             </Option>
             <Option>
                 <TickX>354 </TickX>
-                <TickY>479 </TickY>
+                <TickY>379 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>477 </OptionY1>
+                <OptionY1>377 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>498</OptionY2>
+                <OptionY2>398</OptionY2>
                 <CandidateID>00010001010302</CandidateID>
             </Option>
             <Option>
                 <TickX>356 </TickX>
-                <TickY>502 </TickY>
+                <TickY>402 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>501 </OptionY1>
+                <OptionY1>401 </OptionY1>
                 <OptionX2>637  </OptionX2>
-                <OptionY2>539</OptionY2>
+                <OptionY2>439</OptionY2>
                 <CandidateID>00010001010303</CandidateID>
             </Option>
         </Options>
@@ -263,37 +263,37 @@
         <WriteIn>
             <MaxWriteIn>24</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
-            <WriteInY1>663 </WriteInY1>
+            <WriteInY1>563 </WriteInY1>
             <WriteInX2>632 </WriteInX2>
-            <WriteInY2>683</WriteInY2>
+            <WriteInY2>583</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>356 </TickX>
-                <TickY>615 </TickY>
+                <TickY>515 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>611 </OptionY1>
+                <OptionY1>511 </OptionY1>
                 <OptionX2>637</OptionX2>
-                <OptionY2>633 </OptionY2>
+                <OptionY2>533 </OptionY2>
                 <CandidateID>00010001010401</CandidateID>
             </Option>
             <Option>
                 <TickX>355 </TickX>
-                <TickY>639 </TickY>
+                <TickY>539 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>637 </OptionY1>
+                <OptionY1>537 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>659 </OptionY2>
+                <OptionY2>559 </OptionY2>
                 <CandidateID>00010001010402</CandidateID>
             </Option>
             <Option>
                 <TickX>356 </TickX>
-                <TickY>665 </TickY>
+                <TickY>565 </TickY>
                 <OptionX1>354  </OptionX1>
-                <OptionY1>663 </OptionY1>
+                <OptionY1>563 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>701 </OptionY2>
+                <OptionY2>601 </OptionY2>
                 <CandidateID>00010001010403</CandidateID>
             </Option>
         </Options>
@@ -311,46 +311,46 @@
         <WriteIn>
             <MaxWriteIn>24</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
-            <WriteInY1>823 </WriteInY1>
+            <WriteInY1>723 </WriteInY1>
             <WriteInX2>632 </WriteInX2>
-            <WriteInY2>843</WriteInY2>
+            <WriteInY2>743</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>357 </TickX>
-                <TickY>749 </TickY>
+                <TickY>649 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>745 </OptionY1>
+                <OptionY1>645 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>769</OptionY2>
+                <OptionY2>669</OptionY2>
                 <CandidateID>00010001010501</CandidateID>
             </Option>
             <Option>
                 <TickX>357 </TickX>
-                <TickY>776 </TickY>
+                <TickY>676 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>773 </OptionY1>
+                <OptionY1>673 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>794</OptionY2>
+                <OptionY2>694</OptionY2>
                 <CandidateID>00010001010502</CandidateID>
             </Option>
             <Option>
                 <TickX>358</TickX>
-                <TickY>801 </TickY>
+                <TickY>701 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>797 </OptionY1>
+                <OptionY1>697 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>818</OptionY2>
+                <OptionY2>718</OptionY2>
                 <CandidateID>00010001010503</CandidateID>
             </Option>
             <Option>
                 <TickX>358</TickX>
-                <TickY>824 </TickY>
+                <TickY>724 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>821 </OptionY1>
+                <OptionY1>721 </OptionY1>
                 <OptionX2>637  </OptionX2>
-                <OptionY2>861</OptionY2>
+                <OptionY2>761</OptionY2>
                 <CandidateID>00010001010504</CandidateID>
             </Option>
         </Options>
@@ -368,37 +368,37 @@
         <WriteIn>
             <MaxWriteIn>24</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
-            <WriteInY1>963 </WriteInY1>
+            <WriteInY1>863 </WriteInY1>
             <WriteInX2>632</WriteInX2>
-            <WriteInY2>983</WriteInY2>
+            <WriteInY2>883</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>357 </TickX>
-                <TickY>916 </TickY>
+                <TickY>816 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>913 </OptionY1>
+                <OptionY1>813 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>934 </OptionY2>
+                <OptionY2>834 </OptionY2>
                 <CandidateID>00010001010601</CandidateID>
             </Option>
             <Option>
                 <TickX>356 </TickX>
-                <TickY>941 </TickY>
+                <TickY>841 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>938 </OptionY1>
+                <OptionY1>838 </OptionY1>
                 <OptionX2>637 </OptionX2>
-                <OptionY2>959</OptionY2>
+                <OptionY2>859</OptionY2>
                 <CandidateID>00010001010602</CandidateID>
             </Option>
             <Option>
                 <TickX>356 </TickX>
-                <TickY>965 </TickY>
+                <TickY>865 </TickY>
                 <OptionX1>354 </OptionX1>
-                <OptionY1>962 </OptionY1>
+                <OptionY1>862 </OptionY1>
                 <OptionX2>637  </OptionX2>
-                <OptionY2>1000 </OptionY2>
+                <OptionY2>900 </OptionY2>
                 <CandidateID>00010001010603</CandidateID>
             </Option>
         </Options>
@@ -416,46 +416,46 @@
         <WriteIn>
             <MaxWriteIn>24</MaxWriteIn>
             <WriteInX1>666 </WriteInX1>
-            <WriteInY1>295 </WriteInY1>
+            <WriteInY1>195 </WriteInY1>
             <WriteInX2>922 </WriteInX2>
-            <WriteInY2>315</WriteInY2>
+            <WriteInY2>215</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>648 </TickX>
-                <TickY>224 </TickY>
+                <TickY>124 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>217 </OptionY1>
+                <OptionY1>117 </OptionY1>
                 <OptionX2>930 </OptionX2>
-                <OptionY2>241 </OptionY2>
+                <OptionY2>141 </OptionY2>
                 <CandidateID>00010001010701</CandidateID>
             </Option>
             <Option>
                 <TickX>648 </TickX>
-                <TickY>247 </TickY>
+                <TickY>147 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>244 </OptionY1>
+                <OptionY1>144 </OptionY1>
                 <OptionX2>930   </OptionX2>
-                <OptionY2>265 </OptionY2>
+                <OptionY2>165 </OptionY2>
                 <CandidateID>00010001010702</CandidateID>
             </Option>
             <Option>
                 <TickX>648 </TickX>
-                <TickY>271 </TickY>
+                <TickY>171 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>268 </OptionY1>
+                <OptionY1>168 </OptionY1>
                 <OptionX2>930 </OptionX2>
-                <OptionY2>290 </OptionY2>
+                <OptionY2>190 </OptionY2>
                 <CandidateID>00010001010703</CandidateID>
             </Option>
             <Option>
                 <TickX>648 </TickX>
-                <TickY>296 </TickY>
+                <TickY>196 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>293 </OptionY1>
+                <OptionY1>193 </OptionY1>
                 <OptionX2>930 </OptionX2>
-                <OptionY2>332 </OptionY2>
+                <OptionY2>232 </OptionY2>
                 <CandidateID>00010001010704</CandidateID>
             </Option>
         </Options>
@@ -473,37 +473,37 @@
         <WriteIn>
             <MaxWriteIn>24</MaxWriteIn>
             <WriteInX1>666</WriteInX1>
-            <WriteInY1>435</WriteInY1>
+            <WriteInY1>335</WriteInY1>
             <WriteInX2>922 </WriteInX2>
-            <WriteInY2>455</WriteInY2>
+            <WriteInY2>355</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>648 </TickX>
-                <TickY>390 </TickY>
+                <TickY>290 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>386 </OptionY1>
+                <OptionY1>286 </OptionY1>
                 <OptionX2>930 </OptionX2>
-                <OptionY2>407</OptionY2>
+                <OptionY2>307</OptionY2>
                 <CandidateID>00010001010801</CandidateID>
             </Option>
             <Option>
                 <TickX>648 </TickX>
-                <TickY>413</TickY>
+                <TickY>313</TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>410 </OptionY1>
+                <OptionY1>310 </OptionY1>
                 <OptionX2>930   </OptionX2>
-                <OptionY2>431</OptionY2>
+                <OptionY2>331</OptionY2>
                 <CandidateID>00010001010802</CandidateID>
             </Option>
             <Option>
                 <TickX>648 </TickX>
-                <TickY>437 </TickY>
+                <TickY>337 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>434 </OptionY1>
+                <OptionY1>334 </OptionY1>
                 <OptionX2>930     </OptionX2>
-                <OptionY2>474</OptionY2>
+                <OptionY2>374</OptionY2>
                 <CandidateID>00010001010803</CandidateID>
             </Option>
         </Options>
@@ -529,20 +529,20 @@
         <Options>
             <Option>
                 <TickX>653 </TickX>
-                <TickY>736 </TickY>
+                <TickY>636 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>734 </OptionY1>
+                <OptionY1>634 </OptionY1>
                 <OptionX2>905 </OptionX2>
-                <OptionY2>754 </OptionY2>
+                <OptionY2>654 </OptionY2>
                 <CandidateID>00010001010901</CandidateID>
             </Option>
             <Option>
                 <TickX>653 </TickX>
-                <TickY>759 </TickY>
+                <TickY>659 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>757 </OptionY1>
+                <OptionY1>657 </OptionY1>
                 <OptionX2>905    </OptionX2>
-                <OptionY2>790 </OptionY2>
+                <OptionY2>690 </OptionY2>
                 <CandidateID>00010001010902</CandidateID>
             </Option>
         </Options>
@@ -568,20 +568,20 @@
         <Options>
             <Option>
                 <TickX>653 </TickX>
-                <TickY>947 </TickY>
+                <TickY>847 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>945 </OptionY1>
+                <OptionY1>845 </OptionY1>
                 <OptionX2>905 </OptionX2>
-                <OptionY2>965        </OptionY2>
+                <OptionY2>865 </OptionY2>
                 <CandidateID>00010001011001</CandidateID>
             </Option>
             <Option>
                 <TickX>653 </TickX>
-                <TickY>970 </TickY>
+                <TickY>870 </TickY>
                 <OptionX1>645 </OptionX1>
-                <OptionY1>968 </OptionY1>
-                <OptionX2>905      </OptionX2>
-                <OptionY2>991        </OptionY2>
+                <OptionY1>868 </OptionY1>
+                <OptionX2>905 </OptionX2>
+                <OptionY2>891 </OptionY2>
                 <CandidateID>00010001011002</CandidateID>
             </Option>
         </Options>
@@ -607,20 +607,20 @@
         <Options>
             <Option>
                 <TickX>943  </TickX>
-                <TickY>312 </TickY>
+                <TickY>212 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>310  </OptionY1>
+                <OptionY1>210  </OptionY1>
                 <OptionX2>1200 </OptionX2>
-                <OptionY2>329 </OptionY2>
+                <OptionY2>229 </OptionY2>
                 <CandidateID>00010001011101   </CandidateID>
             </Option>
             <Option>
                 <TickX>943 </TickX>
-                <TickY>331 </TickY>
+                <TickY>231 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>331 </OptionY1>
+                <OptionY1>231 </OptionY1>
                 <OptionX2>1200 </OptionX2>
-                <OptionY2>350 </OptionY2>
+                <OptionY2>250 </OptionY2>
                 <CandidateID>00010001011102   </CandidateID>
             </Option>
         </Options>
@@ -638,100 +638,100 @@
         <WriteIn>
             <MaxWriteIn>24</MaxWriteIn>
             <WriteInX1>963 </WriteInX1>
-            <WriteInY1>580 </WriteInY1>
+            <WriteInY1>480 </WriteInY1>
             <WriteInX2>1203 </WriteInX2>
-            <WriteInY2>598 </WriteInY2>
+            <WriteInY2>498 </WriteInY2>
             <WriteInFontSize>13</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>943 </TickX>
-                <TickY>400 </TickY>
+                <TickY>300 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>398 </OptionY1>
+                <OptionY1>298 </OptionY1>
                 <OptionX2>1200 </OptionX2>
-                <OptionY2>418 </OptionY2>
+                <OptionY2>318 </OptionY2>
                 <CandidateID>00010001011201</CandidateID>
             </Option>
             <Option>
                 <TickX>943 </TickX>
-                <TickY>421 </TickY>
+                <TickY>321 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>420 </OptionY1>
+                <OptionY1>320 </OptionY1>
                 <OptionX2>1200 </OptionX2>
-                <OptionY2>438 </OptionY2>
+                <OptionY2>338 </OptionY2>
                 <CandidateID>00010001011202</CandidateID>
             </Option>
             <Option>
                 <TickX>944 </TickX>
-                <TickY>440 </TickY>
+                <TickY>340 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>439 </OptionY1>
+                <OptionY1>339 </OptionY1>
                 <OptionX2>1200  </OptionX2>
-                <OptionY2>457 </OptionY2>
+                <OptionY2>357 </OptionY2>
                 <CandidateID>00010001011203</CandidateID>
             </Option>
             <Option>
                 <TickX>944</TickX>
-                <TickY>460 </TickY>
+                <TickY>360 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>459 </OptionY1>
+                <OptionY1>359 </OptionY1>
                 <OptionX2>1200  </OptionX2>
-                <OptionY2>477 </OptionY2>
+                <OptionY2>377 </OptionY2>
                 <CandidateID>00010001011204</CandidateID>
             </Option>
             <Option>
                 <TickX>945 </TickX>
-                <TickY>480 </TickY>
+                <TickY>380 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>479 </OptionY1>
+                <OptionY1>379 </OptionY1>
                 <OptionX2>1200   </OptionX2>
-                <OptionY2>498 </OptionY2>
+                <OptionY2>398 </OptionY2>
                 <CandidateID>00010001011205</CandidateID>
             </Option>
             <Option>
                 <TickX>944 </TickX>
-                <TickY>502 </TickY>
+                <TickY>402 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>501 </OptionY1>
+                <OptionY1>401 </OptionY1>
                 <OptionX2>1200 </OptionX2>
-                <OptionY2>519 </OptionY2>
+                <OptionY2>419 </OptionY2>
                 <CandidateID>00010001011206</CandidateID>
             </Option>
             <Option>
                 <TickX>944 </TickX>
-                <TickY>521 </TickY>
+                <TickY>421 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>520 </OptionY1>
+                <OptionY1>420 </OptionY1>
                 <OptionX2>1200 </OptionX2>
-                <OptionY2>539 </OptionY2>
+                <OptionY2>439 </OptionY2>
                 <CandidateID>00010001011207</CandidateID>
             </Option>
             <Option>
                 <TickX>945 </TickX>
-                <TickY>542 </TickY>
+                <TickY>442 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>540 </OptionY1>
+                <OptionY1>440 </OptionY1>
                 <OptionX2>1200 </OptionX2>
-                <OptionY2>559</OptionY2>
+                <OptionY2>459</OptionY2>
                 <CandidateID>00010001011208</CandidateID>
             </Option>
             <Option>
                 <TickX>946 </TickX>
-                <TickY>561 </TickY>
+                <TickY>461 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>560 </OptionY1>
+                <OptionY1>460 </OptionY1>
                 <OptionX2>1200 </OptionX2>
-                <OptionY2>578</OptionY2>
+                <OptionY2>478</OptionY2>
                 <CandidateID>00010001011209</CandidateID>
             </Option>
             <Option>
                 <TickX>946 </TickX>
-                <TickY>580 </TickY>
+                <TickY>480 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>579 </OptionY1>
+                <OptionY1>479 </OptionY1>
                 <OptionX2>1200 </OptionX2>
-                <OptionY2>610 </OptionY2>
+                <OptionY2>510 </OptionY2>
                 <CandidateID>00010001011210  </CandidateID>
             </Option>
         </Options>
@@ -742,89 +742,89 @@
         <Ordered>t</Ordered>
         <Reset>
             <ResetX1>1084 </ResetX1>
-            <ResetY1>683 </ResetY1>
+            <ResetY1>583 </ResetY1>
             <ResetX2>1192 </ResetX2>
-            <ResetY2>699</ResetY2>
+            <ResetY2>599</ResetY2>
         </Reset>
         <WriteIn>
             <MaxWriteIn>24 </MaxWriteIn>
             <WriteInX1>967 </WriteInX1>
-            <WriteInY1>846 </WriteInY1>
+            <WriteInY1>746 </WriteInY1>
             <WriteInX2>1207 </WriteInX2>
-            <WriteInY2>864</WriteInY2>
+            <WriteInY2>764</WriteInY2>
             <WriteInFontSize>13</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
                 <TickX>945</TickX>
-                <TickY>703</TickY>
+                <TickY>603</TickY>
                 <OptionX1>940</OptionX1>
-                <OptionY1>703</OptionY1>
+                <OptionY1>603</OptionY1>
                 <OptionX2>1210</OptionX2>
-                <OptionY2>720</OptionY2>
+                <OptionY2>620</OptionY2>
                 <CandidateID>00010001011301</CandidateID>
             </Option>
             <Option>
                 <TickX>945</TickX>
-                <TickY>723</TickY>
+                <TickY>623</TickY>
                 <OptionX1>940</OptionX1>
-                <OptionY1>723</OptionY1>
+                <OptionY1>623</OptionY1>
                 <OptionX2>1210</OptionX2>
-                <OptionY2>740</OptionY2>
+                <OptionY2>640</OptionY2>
                 <CandidateID>00010001011302</CandidateID>
             </Option>
             <Option>
                 <TickX>945</TickX>
-                <TickY>743 </TickY>
+                <TickY>643 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>743 </OptionY1>
+                <OptionY1>643 </OptionY1>
                 <OptionX2>1210    </OptionX2>
-                <OptionY2>760 </OptionY2>
+                <OptionY2>660 </OptionY2>
                 <CandidateID>00010001011303</CandidateID>
             </Option>
             <Option>
                 <TickX>945</TickX>
-                <TickY>765 </TickY>
+                <TickY>665 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>765 </OptionY1>
+                <OptionY1>665 </OptionY1>
                 <OptionX2>1210     </OptionX2>
-                <OptionY2>782 </OptionY2>
+                <OptionY2>682 </OptionY2>
                 <CandidateID>00010001011304</CandidateID>
             </Option>
             <Option>
                 <TickX>945</TickX>
-                <TickY>785 </TickY>
+                <TickY>685 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>784 </OptionY1>
+                <OptionY1>684 </OptionY1>
                 <OptionX2>1210 </OptionX2>
-                <OptionY2>800   </OptionY2>
+                <OptionY2>700   </OptionY2>
                 <CandidateID>00010001011305</CandidateID>
             </Option>
             <Option>
                 <TickX>945 </TickX>
-                <TickY>805 </TickY>
+                <TickY>705 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>805 </OptionY1>
+                <OptionY1>705 </OptionY1>
                 <OptionX2>1210 </OptionX2>
-                <OptionY2>823   </OptionY2>
+                <OptionY2>723   </OptionY2>
                 <CandidateID>00010001011306</CandidateID>
             </Option>
             <Option>
                 <TickX>945 </TickX>
-                <TickY>826 </TickY>
+                <TickY>726 </TickY>
                 <OptionX1>940 </OptionX1>
-                <OptionY1>826 </OptionY1>
+                <OptionY1>726 </OptionY1>
                 <OptionX2>1210 </OptionX2>
-                <OptionY2>843  </OptionY2>
+                <OptionY2>743  </OptionY2>
                 <CandidateID>00010001011307</CandidateID>
             </Option>
             <Option>
                 <TickX>945</TickX>
-                <TickY>846</TickY>
+                <TickY>746</TickY>
                 <OptionX1>940</OptionX1>
-                <OptionY1>846</OptionY1>
+                <OptionY1>746</OptionY1>
                 <OptionX2>1210</OptionX2>
-                <OptionY2>880</OptionY2>
+                <OptionY2>780</OptionY2>
                 <CandidateID>00010001011308</CandidateID>
             </Option>
         </Options>
