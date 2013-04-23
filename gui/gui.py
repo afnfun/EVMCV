@@ -430,7 +430,8 @@ class Ballot:
 			if (self.timeout(now1, now2)): return 'timeout'
 			for event in pygame.event.get():
 				if event.type is MOUSEBUTTONUP:
-                    pos = pygame.mouse.get_pos()
+                    now1 = datetime.datetime.now() #reset timeout
+					pos = pygame.mouse.get_pos()
 					if (pos[0] >= 210 and pos[0] < (210 + control.ButtonBack_size[0]) and
 						pos[1] >= 10 and pos[1] < (10 + control.ButtonBack_size[1]) ) : # Back and Edit Vote
 						return 'back'
@@ -467,7 +468,6 @@ class Ballot:
 						prev = self.preview()
 						if prev=='back':
 							self.draw()
-                            now1 = datetime.datetime.now() # reset last action timer
 							return
 						if prev=='cast':
 							self.cast("voter")
