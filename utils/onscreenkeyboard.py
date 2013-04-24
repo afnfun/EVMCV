@@ -85,7 +85,7 @@ class OnScreenKeyboard:
 		x2=740
 		y2= yh+10
 		text_rec=pygame.Rect(x1, y1 , x2 , y2 )
-		#pygame.draw.rect(screen,(0,0,0),text_rec, 1)
+		pygame.draw.rect(screen,(0,0,0),text_rec, 1)
 
 		# Draw the keyboard
 		screen.blit( self.image, (self.xpos, self.ypos))
