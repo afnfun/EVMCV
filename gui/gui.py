@@ -108,15 +108,23 @@ def check_minumum_writein_area(x1,y1,x2,y2,maxWrTn, fontSize):
 	area_width = x2-x1
 	area_height = y2-y1
 	font = pygame.font.SysFont('arial', fontSize)
-	xw,yh = font.size("M")
+	xw,yh = font.size("W")
 	if ((xw>=area_width+(line_distance*2)+1) or (yh>=area_height+(line_distance*2)+1)):
+		print 'writein area are smaller than single character!!'
 		return 0
 	no_lines = int((area_height-(line_distance*2))/(yh+line_distance))
-	character_per_line = int((area_width-4)/xw)
+	character_per_line = int((area_width)/xw)
 	#
+	
 	if (maxWrTn<=(no_lines*character_per_line)):
 		return 1
 	else:
+		print "Wrtiein configuration error..."
+		print 'character width '+str(xw)
+		print 'area width      '+str(area_width)
+		print 'char per line   '+str(character_per_line)
+		print 'max write in    '+str(maxWrTn)
+		print 'no of lines     '+str(no_lines)
 		return 0
 
 
