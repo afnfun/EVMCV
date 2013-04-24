@@ -177,7 +177,7 @@ class Candidate:
 	def draw_writein(self, text, text_rect):
 		screen.fill( (255,255,255), text_rect)
 		mf = pygame.font.SysFont('arial', self.contest.wrtnFontSize)
-		xw,yh = mf.size("M")
+		xw,yh = mf.size("W")
 		if self.selected:
 			character_per_row = int(text_rect[2]/xw)+1
 			text_length = len(text)
