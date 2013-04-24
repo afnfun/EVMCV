@@ -56,6 +56,7 @@ FVTimeOut=int(settings.FVTimeOut.PCDATA)
 introduction_time=int(settings.Intro_Time.PCDATA)
 screen_width=int(settings.Screen_Width.PCDATA)
 screen_height=int(settings.Screen_Height.PCDATA)
+screen = pygame.display.set_mode( (screen_width, screen_height),0)
 # screen configuration
 dre_pannel_height = 100
 
