@@ -27,10 +27,10 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>44</MaxWriteIn>
+            <MaxWriteIn>38</MaxWriteIn>
             <WriteInX1>90</WriteInX1>
             <WriteInY1>857</WriteInY1>
-            <WriteInX2>340</WriteInX2>
+            <WriteInX2>345</WriteInX2>
             <WriteInY2>900</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
@@ -120,12 +120,12 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>23</MaxWriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
             <WriteInX1>376</WriteInX1>
             <WriteInY1>261</WriteInY1>
             <WriteInX2>637</WriteInX2>
             <WriteInY2>281</WriteInY2>
-            <WriteInFontSize>14</WriteInFontSize>
+            <WriteInFontSize>13</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
@@ -213,10 +213,10 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>22</MaxWriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
             <WriteInY1>401 </WriteInY1>
-            <WriteInX2>632 </WriteInX2>
+            <WriteInX2>637 </WriteInX2>
             <WriteInY2>421</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
@@ -261,10 +261,10 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>22</MaxWriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
             <WriteInY1>563 </WriteInY1>
-            <WriteInX2>632 </WriteInX2>
+            <WriteInX2>637 </WriteInX2>
             <WriteInY2>583</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
@@ -309,10 +309,10 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>22</MaxWriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
             <WriteInY1>723 </WriteInY1>
-            <WriteInX2>632 </WriteInX2>
+            <WriteInX2>637 </WriteInX2>
             <WriteInY2>743</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
@@ -366,10 +366,10 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>22</MaxWriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
             <WriteInY1>863 </WriteInY1>
-            <WriteInX2>632</WriteInX2>
+            <WriteInX2>637</WriteInX2>
             <WriteInY2>883</WriteInY2>
             <WriteInFontSize>12</WriteInFontSize>
         </WriteIn>
@@ -414,10 +414,10 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>22</MaxWriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
             <WriteInX1>666 </WriteInX1>
             <WriteInY1>195 </WriteInY1>
-            <WriteInX2>922 </WriteInX2>
+            <WriteInX2>930 </WriteInX2>
             <WriteInY2>215</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
@@ -471,10 +471,10 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>22</MaxWriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
             <WriteInX1>666</WriteInX1>
             <WriteInY1>335</WriteInY1>
-            <WriteInX2>922 </WriteInX2>
+            <WriteInX2>930 </WriteInX2>
             <WriteInY2>355</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
@@ -636,7 +636,7 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>21</MaxWriteIn>
+            <MaxWriteIn>18</MaxWriteIn>
             <WriteInX1>963 </WriteInX1>
             <WriteInY1>480 </WriteInY1>
             <WriteInX2>1203 </WriteInX2>
@@ -747,7 +747,7 @@
             <ResetY2>599</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>21 </MaxWriteIn>
+            <MaxWriteIn>18 </MaxWriteIn>
             <WriteInX1>967 </WriteInX1>
             <WriteInY1>746 </WriteInY1>
             <WriteInX2>1207 </WriteInX2>
