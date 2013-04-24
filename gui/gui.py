@@ -371,7 +371,7 @@ class Ballot:
 			(minVotes,maxVotes,ordered,resetX1,resetY1,resetX2,resetY2,maxWriteIn,writeInX1,writeInY1,writeInX2,writeInY2,wrtnFontSize) = match.groups() # move the values of the line to 4 variables
 			# Check the rquired area for maximum writeins vs the available predefined area by user (from XML)
 			if (check_minumum_writein_area(int(writeInX1),int(writeInY1),int(writeInX2),int(writeInY2),int(maxWriteIn),int(wrtnFontSize)) ==0):
-				sys.exit("Maximum write-in characters of contest ("+ str(contnum)+ ") are larger then available space in contest write-in area defined in coords file. Either write-in font size is big or the are is small!!. Exit software...")
+				sys.exit("Maximum write-in characters of contest ("+ str(contnum)+ ") rite-in font size is big or the are is small!!. Exit software...")
 			# append parameters to Contest list
 			contest = Contest( self, contnum,int(minVotes), int(maxVotes), ordered, int(resetX1),int(resetY1)+dre_pannel_height,int(resetX2),int(resetY2)+dre_pannel_height,int(maxWriteIn),int(writeInX1),int(writeInY1)+dre_pannel_height,int(writeInX2),int(writeInY2)+dre_pannel_height,int(wrtnFontSize))
 			#load the options data for the contest
