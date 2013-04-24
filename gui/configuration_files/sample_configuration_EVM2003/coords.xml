@@ -27,10 +27,10 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>48</MaxWriteIn>
+            <MaxWriteIn>44</MaxWriteIn>
             <WriteInX1>90</WriteInX1>
             <WriteInY1>857</WriteInY1>
-            <WriteInX2>343</WriteInX2>
+            <WriteInX2>340</WriteInX2>
             <WriteInY2>900</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
@@ -40,7 +40,7 @@
                 <TickY>483</TickY>
                 <OptionX1>65</OptionX1>
                 <OptionY1>457</OptionY1>
-                <OptionX2>335</OptionX2>
+                <OptionX2>345</OptionX2>
                 <OptionY2>507</OptionY2>
                 <CandidateID>00010001010101</CandidateID>
             </Option>
@@ -49,7 +49,7 @@
                 <TickY>534</TickY>
                 <OptionX1>65</OptionX1>
                 <OptionY1>508</OptionY1>
-                <OptionX2>335</OptionX2>
+                <OptionX2>345</OptionX2>
                 <OptionY2>558</OptionY2>
                 <CandidateID>00010001010102</CandidateID>
             </Option>
@@ -58,7 +58,7 @@
                 <TickY>591</TickY>
                 <OptionX1>65 </OptionX1>
                 <OptionY1>562 </OptionY1>
-                <OptionX2>335 </OptionX2>
+                <OptionX2>345 </OptionX2>
                 <OptionY2>612 </OptionY2>
                 <CandidateID>00010001010103</CandidateID>
             </Option>
@@ -67,7 +67,7 @@
                 <TickY>643 </TickY>
                 <OptionX1>65</OptionX1>
                 <OptionY1>616</OptionY1>
-                <OptionX2>335</OptionX2>
+                <OptionX2>345</OptionX2>
                 <OptionY2>666</OptionY2>
                 <CandidateID>00010001010104</CandidateID>
             </Option>
@@ -76,7 +76,7 @@
                 <TickY>693 </TickY>
                 <OptionX1>65</OptionX1>
                 <OptionY1>668</OptionY1>
-                <OptionX2>335</OptionX2>
+                <OptionX2>345</OptionX2>
                 <OptionY2>718</OptionY2>
                 <CandidateID>00010001010105</CandidateID>
             </Option>
@@ -85,7 +85,7 @@
                 <TickY>756</TickY>
                 <OptionX1>65</OptionX1>
                 <OptionY1>728</OptionY1>
-                <OptionX2>335</OptionX2>
+                <OptionX2>345</OptionX2>
                 <OptionY2>778</OptionY2>
                 <CandidateID>00010001010106</CandidateID>
             </Option>
@@ -94,7 +94,7 @@
                 <TickY>808</TickY>
                 <OptionX1>65</OptionX1>
                 <OptionY1>786</OptionY1>
-                <OptionX2>335</OptionX2>
+                <OptionX2>345</OptionX2>
                 <OptionY2>836</OptionY2>
                 <CandidateID>00010001010107</CandidateID>
             </Option>
@@ -103,7 +103,7 @@
                 <TickY>875</TickY>
                 <OptionX1>65</OptionX1>
                 <OptionY1>840</OptionY1>
-                <OptionX2>335</OptionX2>
+                <OptionX2>345</OptionX2>
                 <OptionY2>900</OptionY2>
                 <CandidateID>00010001010108</CandidateID>
             </Option>
@@ -120,10 +120,10 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>24</MaxWriteIn>
+            <MaxWriteIn>23</MaxWriteIn>
             <WriteInX1>376</WriteInX1>
             <WriteInY1>261</WriteInY1>
-            <WriteInX2>632</WriteInX2>
+            <WriteInX2>637</WriteInX2>
             <WriteInY2>281</WriteInY2>
             <WriteInFontSize>14</WriteInFontSize>
         </WriteIn>
@@ -213,7 +213,7 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>24</MaxWriteIn>
+            <MaxWriteIn>22</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
             <WriteInY1>401 </WriteInY1>
             <WriteInX2>632 </WriteInX2>
@@ -261,7 +261,7 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>24</MaxWriteIn>
+            <MaxWriteIn>22</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
             <WriteInY1>563 </WriteInY1>
             <WriteInX2>632 </WriteInX2>
@@ -309,7 +309,7 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>24</MaxWriteIn>
+            <MaxWriteIn>22</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
             <WriteInY1>723 </WriteInY1>
             <WriteInX2>632 </WriteInX2>
@@ -366,12 +366,12 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>24</MaxWriteIn>
+            <MaxWriteIn>22</MaxWriteIn>
             <WriteInX1>376 </WriteInX1>
             <WriteInY1>863 </WriteInY1>
             <WriteInX2>632</WriteInX2>
             <WriteInY2>883</WriteInY2>
-            <WriteInFontSize>14</WriteInFontSize>
+            <WriteInFontSize>12</WriteInFontSize>
         </WriteIn>
         <Options>
             <Option>
@@ -414,7 +414,7 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>24</MaxWriteIn>
+            <MaxWriteIn>22</MaxWriteIn>
             <WriteInX1>666 </WriteInX1>
             <WriteInY1>195 </WriteInY1>
             <WriteInX2>922 </WriteInX2>
@@ -471,7 +471,7 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>24</MaxWriteIn>
+            <MaxWriteIn>22</MaxWriteIn>
             <WriteInX1>666</WriteInX1>
             <WriteInY1>335</WriteInY1>
             <WriteInX2>922 </WriteInX2>
@@ -636,7 +636,7 @@
             <ResetY2>0</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>24</MaxWriteIn>
+            <MaxWriteIn>21</MaxWriteIn>
             <WriteInX1>963 </WriteInX1>
             <WriteInY1>480 </WriteInY1>
             <WriteInX2>1203 </WriteInX2>
@@ -747,7 +747,7 @@
             <ResetY2>599</ResetY2>
         </Reset>
         <WriteIn>
-            <MaxWriteIn>24 </MaxWriteIn>
+            <MaxWriteIn>21 </MaxWriteIn>
             <WriteInX1>967 </WriteInX1>
             <WriteInY1>746 </WriteInY1>
             <WriteInX2>1207 </WriteInX2>
