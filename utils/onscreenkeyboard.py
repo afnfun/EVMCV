@@ -69,7 +69,7 @@ class OnScreenKeyboard:
 		self.set_video_mode()
 		
 		# Draw the title
-		xw,yh = self.titlefont.size("M")
+		xw,yh = self.titlefont.size("W")
 		x1=(screen_width-740)/2
 		y1=self.titletop
 		x2=screen_width-x1
@@ -79,10 +79,10 @@ class OnScreenKeyboard:
 		screen.blit(rendered_text,title_rec.topleft)
 		#
 		#Draw Input Text Rectangle
-		xw,yh = self.font.size("M")
-		x1=int ((screen_width-740)/2)
+		xw,yh = self.font.size("W")
+		x1=int ((screen_width-750)/2)
 		y1=self.texttop-5
-		x2=740
+		x2=750
 		y2= yh+10
 		text_rec=pygame.Rect(x1, y1 , x2 , y2 )
 		pygame.draw.rect(screen,(0,0,0),text_rec, 1)
@@ -110,7 +110,7 @@ class OnScreenKeyboard:
 
 
 
-		xw,yh = self.font.size("M")
+		xw,yh = self.font.size("W")
 		char_per_line= int(740/xw)
 		
 		fit_str=str[-char_per_line:len(str)]
