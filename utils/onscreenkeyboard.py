@@ -3,14 +3,17 @@ import datetime
 from pygame.locals import *
 sys.path.append(os.path.join('..', '..'))
 from gnosis.xml.objectify import XML_Objectify
+import textrect
 
 settings = XML_Objectify('configuration_files/EVMCVSettings.xml').make_instance()
 # screen configuration
 screen_width=int(settings.Screen_Width.PCDATA)
 screen_height=int(settings.Screen_Height.PCDATA)
-screen = pygame.display.set_mode( (screen_width, screen_height),0)
-
+#screen = pygame.display.set_mode( (screen_width, screen_height),0)
+#print screen_width
 # Functions to create our resources
+
+
 
 def load_image(name, colorkey=-1, size=None):
 # Complete file path
@@ -39,9 +42,9 @@ class OnScreenKeyboard:
 		self.image = load_image('keyboard.png', None, (769, 361));
 		self.xpos = (screen_width - 769) / 2 # difference between screen and keyboard widthes / 2 (centrelized)
 		self.ypos = (screen_height - 361) / 2 + 100 # (difference between screen and keyboard hight / 2) + 100 to give space for writ-in text
-		self.fontsize = 50
+		self.fontsize = 36
 		self.font = pygame.font.SysFont('arial',self.fontsize)
-		self.titlefontsize = 36
+		self.titlefontsize = 32
 		self.titlefont = pygame.font.SysFont('arial',self.titlefontsize)
 		self.titletop = (screen_height - 361) / 2 - 100
 		self.texttop = (screen_height - 361) / 2 
@@ -50,20 +53,44 @@ class OnScreenKeyboard:
 		self.maxChar = maxChar
 		self.show = show
 
+		
+	
+	def set_video_mode(self):
+		global screen
+		#
+		self.screen_size = [screen_width,screen_height]
+		x,y=self.screen_size
+		screen = pygame.display.set_mode([x,y],pygame.BLEND_ADD,0)
+		pygame.display.set_caption('EVMCV Keyboard')
+		screen.fill((255,255,255))
+		
 	def draw( self):
 		# Clear the screen
-		screen.fill( (255, 255, 255))
-
+		self.set_video_mode()
+		
 		# Draw the title
-		titleobj = self.titlefont.render( self.title, 1, (200,0,0))
-
-		# Center it at the top of the screen
-		titleleft = (screen_width - titleobj.get_width()) / 2
-		screen.blit( titleobj, (titleleft, self.titletop))
+		xw,yh = self.titlefont.size("M")
+		x1=(screen_width-740)/2
+		y1=self.titletop
+		x2=screen_width-x1
+		y2= self.titletop+(yh*2+2)
+		title_rec = pygame.Rect(x1,y1,x2,y2)
+		rendered_text=textrect.render_textrect(self.title, self.titlefont, title_rec , (0,0,255), (255,255,255),1)
+		screen.blit(rendered_text,title_rec.topleft)
+		#
+		#Draw Input Text Rectangle
+		xw,yh = self.font.size("M")
+		x1=int ((screen_width-740)/2)
+		y1=self.texttop-5
+		x2=740
+		y2= yh+10
+		text_rec=pygame.Rect(x1, y1 , x2 , y2 )
+		#pygame.draw.rect(screen,(0,0,0),text_rec, 1)
 
 		# Draw the keyboard
 		screen.blit( self.image, (self.xpos, self.ypos))
-
+		
+		#update the screen
 		pygame.display.update()
 
 		self.draw_text()
@@ -82,7 +109,12 @@ class OnScreenKeyboard:
 			str=self.text
 
 
-		textobj = self.font.render( str , 0, (0,0,200))
+
+		xw,yh = self.font.size("M")
+		char_per_line= int(740/xw)
+		
+		fit_str=str[-char_per_line:len(str)]
+		textobj = self.font.render( fit_str , 0, (0,0,200))
 
 		# Compute the x ccordintate for centering
 		textleft = (screen_width-textobj.get_width()-self.cursor_width) / 2
