@@ -1,8 +1,0 @@
-<CastVote ElectionID="0001" PollingPlaceID="0001" PollingMachineID="01" BallotID="0001" VoteNumber="1546" >
-	<Contests>
-		<Contest ContestID="1">
-			<Option>00010001010108</Option>
-			<Writein>SJDIEQUJIOPQUERIORPEQWURIQEWPURIEWQPRUPWQORUPIEQ</Writein>
-		</Contest>
-	</Contests>
-</CastVote>
