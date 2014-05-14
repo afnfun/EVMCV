@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Coordinates>
+    <Election>
+        <!---<Country>ITALY</Country>
+        <Region>Trentino</Region>
+        <City>Trento</City>
+        <Precinct>2216</Precinct>
+        <Date>07012013</Date>-->
+        <EventID>01</EventID>
+        <PollingPlaceID>0001</PollingPlaceID>
+        <PollingStationID>01</PollingStationID>
+        <BallotID>0001</BallotID>
+        <BallotImage>ballot.png</BallotImage>
+        <TickImage_Selected>TickImage_Selected.png</TickImage_Selected>
+        <TickImage_Blank>TickImage_Blank.png</TickImage_Blank>
+        <TickImageOrdered_Selected>TickImageOrdered_Selected.png</TickImageOrdered_Selected>
+        <TickImageOrdered_Blank>TickImageOrdered_Blank.png</TickImageOrdered_Blank>
+    </Election>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>38</MaxWriteIn>
+            <WriteInX1>90</WriteInX1>
+            <WriteInY1>857</WriteInY1>
+            <WriteInX2>345</WriteInX2>
+            <WriteInY2>900</WriteInY2>
+            <WriteInFontSize>14</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>70</TickX>
+                <TickY>483</TickY>
+                <OptionX1>65</OptionX1>
+                <OptionY1>457</OptionY1>
+                <OptionX2>345</OptionX2>
+                <OptionY2>507</OptionY2>
+                <CandidateID>01010101</CandidateID>
+            </Option>
+            <Option>
+                <TickX>71</TickX>
+                <TickY>534</TickY>
+                <OptionX1>65</OptionX1>
+                <OptionY1>508</OptionY1>
+                <OptionX2>345</OptionX2>
+                <OptionY2>558</OptionY2>
+                <CandidateID>01010102</CandidateID>
+            </Option>
+            <Option>
+                <TickX>72</TickX>
+                <TickY>591</TickY>
+                <OptionX1>65 </OptionX1>
+                <OptionY1>562 </OptionY1>
+                <OptionX2>345 </OptionX2>
+                <OptionY2>612 </OptionY2>
+                <CandidateID>01010103</CandidateID>
+            </Option>
+            <Option>
+                <TickX>71</TickX>
+                <TickY>643 </TickY>
+                <OptionX1>65</OptionX1>
+                <OptionY1>616</OptionY1>
+                <OptionX2>345</OptionX2>
+                <OptionY2>666</OptionY2>
+                <CandidateID>01010104</CandidateID>
+            </Option>
+            <Option>
+                <TickX>74 </TickX>
+                <TickY>693 </TickY>
+                <OptionX1>65</OptionX1>
+                <OptionY1>668</OptionY1>
+                <OptionX2>345</OptionX2>
+                <OptionY2>718</OptionY2>
+                <CandidateID>01010105</CandidateID>
+            </Option>
+            <Option>
+                <TickX>75</TickX>
+                <TickY>756</TickY>
+                <OptionX1>65</OptionX1>
+                <OptionY1>728</OptionY1>
+                <OptionX2>345</OptionX2>
+                <OptionY2>778</OptionY2>
+                <CandidateID>01010106</CandidateID>
+            </Option>
+            <Option>
+                <TickX>74</TickX>
+                <TickY>808</TickY>
+                <OptionX1>65</OptionX1>
+                <OptionY1>786</OptionY1>
+                <OptionX2>345</OptionX2>
+                <OptionY2>836</OptionY2>
+                <CandidateID>01010107</CandidateID>
+            </Option>
+            <Option>
+                <TickX>72</TickX>
+                <TickY>875</TickY>
+                <OptionX1>65</OptionX1>
+                <OptionY1>840</OptionY1>
+                <OptionX2>345</OptionX2>
+                <OptionY2>900</OptionY2>
+                <CandidateID>01010100</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
+            <WriteInX1>376</WriteInX1>
+            <WriteInY1>261</WriteInY1>
+            <WriteInX2>637</WriteInX2>
+            <WriteInY2>281</WriteInY2>
+            <WriteInFontSize>13</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>357 </TickX>
+                <TickY>102 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>98 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>123 </OptionY2>
+                <CandidateID>01020101</CandidateID>
+            </Option>
+            <Option>
+                <TickX>356 </TickX>
+                <TickY>127 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>126 </OptionY1>
+                <OptionX2>637  </OptionX2>
+                <OptionY2>145</OptionY2>
+                <CandidateID>01020102</CandidateID>
+            </Option>
+            <Option>
+                <TickX>356 </TickX>
+                <TickY>149 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>148 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>168</OptionY2>
+                <CandidateID>01020103</CandidateID>
+            </Option>
+            <Option>
+                <TickX>357 </TickX>
+                <TickY>172 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>171 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>190</OptionY2>
+                <CandidateID>01020104</CandidateID>
+            </Option>
+            <Option>
+                <TickX>357 </TickX>
+                <TickY>194 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>193 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>212</OptionY2>
+                <CandidateID>01020105</CandidateID>
+            </Option>
+            <Option>
+                <TickX>358 </TickX>
+                <TickY>215 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>215 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>234 </OptionY2>
+                <CandidateID>01020106</CandidateID>
+            </Option>
+            <Option>
+                <TickX>360 </TickX>
+                <TickY>238 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>237 </OptionY1>
+                <OptionX2>637  </OptionX2>
+                <OptionY2>256</OptionY2>
+                <CandidateID>01020107</CandidateID>
+            </Option>
+            <Option>
+                <TickX>359 </TickX>
+                <TickY>263 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>261 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>299 </OptionY2>
+                <CandidateID>01020100</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
+            <WriteInX1>376 </WriteInX1>
+            <WriteInY1>401 </WriteInY1>
+            <WriteInX2>637 </WriteInX2>
+            <WriteInY2>421</WriteInY2>
+            <WriteInFontSize>14</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>354 </TickX>
+                <TickY>357 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>352 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>374</OptionY2>
+                <CandidateID>01020201</CandidateID>
+            </Option>
+            <Option>
+                <TickX>354 </TickX>
+                <TickY>379 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>377 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>398</OptionY2>
+                <CandidateID>01020202</CandidateID>
+            </Option>
+            <Option>
+                <TickX>356 </TickX>
+                <TickY>402 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>401 </OptionY1>
+                <OptionX2>637  </OptionX2>
+                <OptionY2>439</OptionY2>
+                <CandidateID>01020200</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
+            <WriteInX1>376 </WriteInX1>
+            <WriteInY1>563 </WriteInY1>
+            <WriteInX2>637 </WriteInX2>
+            <WriteInY2>583</WriteInY2>
+            <WriteInFontSize>14</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>356 </TickX>
+                <TickY>515 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>511 </OptionY1>
+                <OptionX2>637</OptionX2>
+                <OptionY2>533 </OptionY2>
+                <CandidateID>01030101</CandidateID>
+            </Option>
+            <Option>
+                <TickX>355 </TickX>
+                <TickY>539 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>537 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>559 </OptionY2>
+                <CandidateID>01030102</CandidateID>
+            </Option>
+            <Option>
+                <TickX>356 </TickX>
+                <TickY>565 </TickY>
+                <OptionX1>354  </OptionX1>
+                <OptionY1>563 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>601 </OptionY2>
+                <CandidateID>01030100</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
+            <WriteInX1>376 </WriteInX1>
+            <WriteInY1>723 </WriteInY1>
+            <WriteInX2>637 </WriteInX2>
+            <WriteInY2>743</WriteInY2>
+            <WriteInFontSize>14</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>357 </TickX>
+                <TickY>649 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>645 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>669</OptionY2>
+                <CandidateID>01030201</CandidateID>
+            </Option>
+            <Option>
+                <TickX>357 </TickX>
+                <TickY>676 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>673 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>694</OptionY2>
+                <CandidateID>01030202</CandidateID>
+            </Option>
+            <Option>
+                <TickX>358</TickX>
+                <TickY>701 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>697 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>718</OptionY2>
+                <CandidateID>01030203</CandidateID>
+            </Option>
+            <Option>
+                <TickX>358</TickX>
+                <TickY>724 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>721 </OptionY1>
+                <OptionX2>637  </OptionX2>
+                <OptionY2>761</OptionY2>
+                <CandidateID>01030200</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
+            <WriteInX1>376 </WriteInX1>
+            <WriteInY1>863 </WriteInY1>
+            <WriteInX2>637</WriteInX2>
+            <WriteInY2>883</WriteInY2>
+            <WriteInFontSize>12</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>357 </TickX>
+                <TickY>816 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>813 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>834 </OptionY2>
+                <CandidateID>01030301</CandidateID>
+            </Option>
+            <Option>
+                <TickX>356 </TickX>
+                <TickY>841 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>838 </OptionY1>
+                <OptionX2>637 </OptionX2>
+                <OptionY2>859</OptionY2>
+                <CandidateID>01030302</CandidateID>
+            </Option>
+            <Option>
+                <TickX>356 </TickX>
+                <TickY>865 </TickY>
+                <OptionX1>354 </OptionX1>
+                <OptionY1>862 </OptionY1>
+                <OptionX2>637  </OptionX2>
+                <OptionY2>900 </OptionY2>
+                <CandidateID>01030300</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
+            <WriteInX1>666 </WriteInX1>
+            <WriteInY1>195 </WriteInY1>
+            <WriteInX2>930 </WriteInX2>
+            <WriteInY2>215</WriteInY2>
+            <WriteInFontSize>14</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>648 </TickX>
+                <TickY>124 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>117 </OptionY1>
+                <OptionX2>930 </OptionX2>
+                <OptionY2>141 </OptionY2>
+                <CandidateID>01040101</CandidateID>
+            </Option>
+            <Option>
+                <TickX>648 </TickX>
+                <TickY>147 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>144 </OptionY1>
+                <OptionX2>930   </OptionX2>
+                <OptionY2>165 </OptionY2>
+                <CandidateID>01040102</CandidateID>
+            </Option>
+            <Option>
+                <TickX>648 </TickX>
+                <TickY>171 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>168 </OptionY1>
+                <OptionX2>930 </OptionX2>
+                <OptionY2>190 </OptionY2>
+                <CandidateID>01040103</CandidateID>
+            </Option>
+            <Option>
+                <TickX>648 </TickX>
+                <TickY>196 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>193 </OptionY1>
+                <OptionX2>930 </OptionX2>
+                <OptionY2>232 </OptionY2>
+                <CandidateID>01040100</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>20</MaxWriteIn>
+            <WriteInX1>666</WriteInX1>
+            <WriteInY1>335</WriteInY1>
+            <WriteInX2>930 </WriteInX2>
+            <WriteInY2>355</WriteInY2>
+            <WriteInFontSize>14</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>648 </TickX>
+                <TickY>290 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>286 </OptionY1>
+                <OptionX2>930 </OptionX2>
+                <OptionY2>307</OptionY2>
+                <CandidateID>01040201</CandidateID>
+            </Option>
+            <Option>
+                <TickX>648 </TickX>
+                <TickY>313</TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>310 </OptionY1>
+                <OptionX2>930   </OptionX2>
+                <OptionY2>331</OptionY2>
+                <CandidateID>01040202</CandidateID>
+            </Option>
+            <Option>
+                <TickX>648 </TickX>
+                <TickY>337 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>334 </OptionY1>
+                <OptionX2>930     </OptionX2>
+                <OptionY2>374</OptionY2>
+                <CandidateID>01040200</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>0</MaxWriteIn>
+            <WriteInX1>0</WriteInX1>
+            <WriteInY1>0</WriteInY1>
+            <WriteInX2>0</WriteInX2>
+            <WriteInY2>0</WriteInY2>
+            <WriteInFontSize>0</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>653 </TickX>
+                <TickY>636 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>634 </OptionY1>
+                <OptionX2>905 </OptionX2>
+                <OptionY2>654 </OptionY2>
+                <CandidateID>01050101</CandidateID>
+            </Option>
+            <Option>
+                <TickX>653 </TickX>
+                <TickY>659 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>657 </OptionY1>
+                <OptionX2>905    </OptionX2>
+                <OptionY2>690 </OptionY2>
+                <CandidateID>01050102</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>0</MaxWriteIn>
+            <WriteInX1>0</WriteInX1>
+            <WriteInY1>0</WriteInY1>
+            <WriteInX2>0</WriteInX2>
+            <WriteInY2>0</WriteInY2>
+            <WriteInFontSize>0</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>653 </TickX>
+                <TickY>847 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>845 </OptionY1>
+                <OptionX2>905 </OptionX2>
+                <OptionY2>865 </OptionY2>
+                <CandidateID>01050201</CandidateID>
+            </Option>
+            <Option>
+                <TickX>653 </TickX>
+                <TickY>870 </TickY>
+                <OptionX1>645 </OptionX1>
+                <OptionY1>868 </OptionY1>
+                <OptionX2>905 </OptionX2>
+                <OptionY2>891 </OptionY2>
+                <CandidateID>01050202</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>1</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>0</MaxWriteIn>
+            <WriteInX1>0</WriteInX1>
+            <WriteInY1>0</WriteInY1>
+            <WriteInX2>0</WriteInX2>
+            <WriteInY2>0</WriteInY2>
+            <WriteInFontSize>0</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>943  </TickX>
+                <TickY>212 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>210  </OptionY1>
+                <OptionX2>1200 </OptionX2>
+                <OptionY2>229 </OptionY2>
+                <CandidateID>01060101</CandidateID>
+            </Option>
+            <Option>
+                <TickX>943 </TickX>
+                <TickY>231 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>231 </OptionY1>
+                <OptionX2>1200 </OptionX2>
+                <OptionY2>250 </OptionY2>
+                <CandidateID>01060102</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>3</MaxVotes>
+        <Ordered>f</Ordered>
+        <Reset>
+            <ResetX1>0</ResetX1>
+            <ResetY1>0</ResetY1>
+            <ResetX2>0</ResetX2>
+            <ResetY2>0</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>18</MaxWriteIn>
+            <WriteInX1>963 </WriteInX1>
+            <WriteInY1>480 </WriteInY1>
+            <WriteInX2>1203 </WriteInX2>
+            <WriteInY2>498 </WriteInY2>
+            <WriteInFontSize>13</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>943 </TickX>
+                <TickY>300 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>298 </OptionY1>
+                <OptionX2>1200 </OptionX2>
+                <OptionY2>318 </OptionY2>
+                <CandidateID>01060201</CandidateID>
+            </Option>
+            <Option>
+                <TickX>943 </TickX>
+                <TickY>321 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>320 </OptionY1>
+                <OptionX2>1200 </OptionX2>
+                <OptionY2>338 </OptionY2>
+                <CandidateID>01060202</CandidateID>
+            </Option>
+            <Option>
+                <TickX>944 </TickX>
+                <TickY>340 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>339 </OptionY1>
+                <OptionX2>1200  </OptionX2>
+                <OptionY2>357 </OptionY2>
+                <CandidateID>01060203</CandidateID>
+            </Option>
+            <Option>
+                <TickX>944</TickX>
+                <TickY>360 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>359 </OptionY1>
+                <OptionX2>1200  </OptionX2>
+                <OptionY2>377 </OptionY2>
+                <CandidateID>01060204</CandidateID>
+            </Option>
+            <Option>
+                <TickX>945 </TickX>
+                <TickY>380 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>379 </OptionY1>
+                <OptionX2>1200   </OptionX2>
+                <OptionY2>398 </OptionY2>
+                <CandidateID>01060205</CandidateID>
+            </Option>
+            <Option>
+                <TickX>944 </TickX>
+                <TickY>402 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>401 </OptionY1>
+                <OptionX2>1200 </OptionX2>
+                <OptionY2>419 </OptionY2>
+                <CandidateID>01060206</CandidateID>
+            </Option>
+            <Option>
+                <TickX>944 </TickX>
+                <TickY>421 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>420 </OptionY1>
+                <OptionX2>1200 </OptionX2>
+                <OptionY2>439 </OptionY2>
+                <CandidateID>01060207</CandidateID>
+            </Option>
+            <Option>
+                <TickX>945 </TickX>
+                <TickY>442 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>440 </OptionY1>
+                <OptionX2>1200 </OptionX2>
+                <OptionY2>459</OptionY2>
+                <CandidateID>01060208</CandidateID>
+            </Option>
+            <Option>
+                <TickX>946 </TickX>
+                <TickY>461 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>460 </OptionY1>
+                <OptionX2>1200 </OptionX2>
+                <OptionY2>478</OptionY2>
+                <CandidateID>01060209</CandidateID>
+            </Option>
+            <Option>
+                <TickX>946 </TickX>
+                <TickY>480 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>479 </OptionY1>
+                <OptionX2>1200 </OptionX2>
+                <OptionY2>510 </OptionY2>
+                <CandidateID>01060200</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+    <Contest>
+        <MinVotes>0</MinVotes>
+        <MaxVotes>8</MaxVotes>
+        <Ordered>t</Ordered>
+        <Reset>
+            <ResetX1>1084 </ResetX1>
+            <ResetY1>583 </ResetY1>
+            <ResetX2>1192 </ResetX2>
+            <ResetY2>599</ResetY2>
+        </Reset>
+        <WriteIn>
+            <MaxWriteIn>18 </MaxWriteIn>
+            <WriteInX1>967 </WriteInX1>
+            <WriteInY1>746 </WriteInY1>
+            <WriteInX2>1207 </WriteInX2>
+            <WriteInY2>764</WriteInY2>
+            <WriteInFontSize>13</WriteInFontSize>
+        </WriteIn>
+        <Options>
+            <Option>
+                <TickX>945</TickX>
+                <TickY>603</TickY>
+                <OptionX1>940</OptionX1>
+                <OptionY1>603</OptionY1>
+                <OptionX2>1210</OptionX2>
+                <OptionY2>620</OptionY2>
+                <CandidateID>01060301</CandidateID>
+            </Option>
+            <Option>
+                <TickX>945</TickX>
+                <TickY>623</TickY>
+                <OptionX1>940</OptionX1>
+                <OptionY1>623</OptionY1>
+                <OptionX2>1210</OptionX2>
+                <OptionY2>640</OptionY2>
+                <CandidateID>01060302</CandidateID>
+            </Option>
+            <Option>
+                <TickX>945</TickX>
+                <TickY>643 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>643 </OptionY1>
+                <OptionX2>1210    </OptionX2>
+                <OptionY2>660 </OptionY2>
+                <CandidateID>01060303</CandidateID>
+            </Option>
+            <Option>
+                <TickX>945</TickX>
+                <TickY>665 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>665 </OptionY1>
+                <OptionX2>1210     </OptionX2>
+                <OptionY2>682 </OptionY2>
+                <CandidateID>01060304</CandidateID>
+            </Option>
+            <Option>
+                <TickX>945</TickX>
+                <TickY>685 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>684 </OptionY1>
+                <OptionX2>1210 </OptionX2>
+                <OptionY2>700   </OptionY2>
+                <CandidateID>01060305</CandidateID>
+            </Option>
+            <Option>
+                <TickX>945 </TickX>
+                <TickY>705 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>705 </OptionY1>
+                <OptionX2>1210 </OptionX2>
+                <OptionY2>723   </OptionY2>
+                <CandidateID>01060306</CandidateID>
+            </Option>
+            <Option>
+                <TickX>945 </TickX>
+                <TickY>726 </TickY>
+                <OptionX1>940 </OptionX1>
+                <OptionY1>726 </OptionY1>
+                <OptionX2>1210 </OptionX2>
+                <OptionY2>743  </OptionY2>
+                <CandidateID>01060307</CandidateID>
+            </Option>
+            <Option>
+                <TickX>945</TickX>
+                <TickY>746</TickY>
+                <OptionX1>940</OptionX1>
+                <OptionY1>746</OptionY1>
+                <OptionX2>1210</OptionX2>
+                <OptionY2>780</OptionY2>
+                <CandidateID>01060300</CandidateID>
+            </Option>
+        </Options>
+    </Contest>
+</Coordinates>

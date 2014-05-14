@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:EML Id="410" SchemaVersion="7.0" xmlns:ns1="urn:oasis:names:tc:evs:schema:eml">
+    <ns1:EMLHeader>
+        <ns1:TransactionId>1</ns1:TransactionId>
+        <ns1:OfficialStatusDetail>
+            <ns1:OfficialStatus>approved</ns1:OfficialStatus>
+            <ns1:StatusDate>2012-04-12</ns1:StatusDate>
+        </ns1:OfficialStatusDetail>
+    </ns1:EMLHeader>
+    <ns1:Ballots>
+        <ns1:EventIdentifier IdNumber="01">
+            <ns1:EventName>Santa Clara Election</ns1:EventName>
+        </ns1:EventIdentifier>
+        <ns1:Ballot>
+            <ns1:Election>
+                <ns1:ElectionIdentifier IdNumber="01">
+                    <ns1:ElectionName>PRESIDENCY</ns1:ElectionName>
+                </ns1:ElectionIdentifier>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="01">
+                        <ns1:ContestName>PRESIDENT &amp; VICEPRESIDENT</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>128</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>George Washington &amp; Abraham Lincoln</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Republican</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>Thomas Jefferson &amp; Harry S. Truman</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Democrat</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="03">
+                                <ns1:CandidateName>Rachel Carson &amp; John Muir</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Green</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="04">
+                                <ns1:CandidateName>Susan B. Anthony &amp; Betsy Ross</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Libertarian</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="05">
+                                <ns1:CandidateName>V. I. Lenin &amp; Karl Marx</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Socialist</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="06">
+                                <ns1:CandidateName>Martin Luther King &amp; John Anderson</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Reform</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="07">
+                                <ns1:CandidateName>Helen Keller &amp; Amelia Earhart</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Workers</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+            </ns1:Election>
+            <ns1:Election>
+                <ns1:ElectionIdentifier IdNumber="02">
+                    <ns1:ElectionName>CONGRESSIONAL</ns1:ElectionName>
+                </ns1:ElectionIdentifier>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="01">
+                        <ns1:ContestName>US SENATOR</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>Frances E. Willard</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Green</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>Lucy Stone</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Libertarian</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="03">
+                                <ns1:CandidateName>Karl Menninger</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Democrat</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="04">
+                                <ns1:CandidateName>Jane Addams</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Workers</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="05">
+                                <ns1:CandidateName>Clarence Darrow</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Socialist</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="06">
+                                <ns1:CandidateName>William Lloyd Garrison</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Labor</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="07">
+                                <ns1:CandidateName>Sidney Hillman</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Republican</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="02">
+                        <ns1:ContestName>US REPRESENTATIVE</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>Ignace Paderewski</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Democrat</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>Lillian Hellman</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Republican</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+            </ns1:Election>
+            <ns1:Election>
+                <ns1:ElectionIdentifier IdNumber="03">
+                    <ns1:ElectionName>STATE</ns1:ElectionName>
+                </ns1:ElectionIdentifier>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="01">
+                        <ns1:ContestName>TREASURER</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>Tom Cosgrove</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Republican</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>John Gallagher</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Democrat</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="02">
+                        <ns1:ContestName>ATTORNEY GENERAL</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>Dewitt Clinton</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Green</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>Charles Parnell</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Republican</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="03">
+                                <ns1:CandidateName>Thomas P. O'Neill Jr</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Democrat</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="03">
+                        <ns1:ContestName>COMMISSIONER OF EDUCATION</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>Christian Doppler</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Republican</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>Carl Sagan</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Democrat</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+            </ns1:Election>
+            <ns1:Election>
+                <ns1:ElectionIdentifier IdNumber="04">
+                    <ns1:ElectionName>LEGISLATIVE</ns1:ElectionName>
+                </ns1:ElectionIdentifier>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="01">
+                        <ns1:ContestName>STATE SENATOR</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>Robert Ingersoll</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Democrat</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>Martin Luther</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Republican</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="03">
+                                <ns1:CandidateName>Barbara Jordon</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Green</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="02">
+                        <ns1:ContestName>STATE ASSEMBLY</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>Don Lee</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Republican</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>Langston Hughes</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                            <ns1:Affiliation>
+                                <ns1:AffiliationIdentifier>
+                                    <ns1:RegisteredName>Democrat</ns1:RegisteredName>
+                                </ns1:AffiliationIdentifier>
+                                <ns1:Type/>
+                            </ns1:Affiliation>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+            </ns1:Election>
+            <ns1:Election>
+                <ns1:ElectionIdentifier IdNumber="05">
+                    <ns1:ElectionName>CONSTITUTIONAL AMENDMENT</ns1:ElectionName>
+                </ns1:ElectionIdentifier>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="01">
+                        <ns1:ContestName>CALIFORNIA TRANSPORTATION INITIATIVE</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>0</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:ReferendumOptionIdentifier IdNumber="01">Yes</ns1:ReferendumOptionIdentifier>
+                        <ns1:ReferendumOptionIdentifier IdNumber="02">No</ns1:ReferendumOptionIdentifier>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="02">
+                        <ns1:ContestName>CALIFORNIA UNIVERSAL HEALTH CARE</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>0</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:ReferendumOptionIdentifier IdNumber="01">Yes</ns1:ReferendumOptionIdentifier>
+                        <ns1:ReferendumOptionIdentifier IdNumber="02">No</ns1:ReferendumOptionIdentifier>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+            </ns1:Election>
+            <ns1:Election>
+                <ns1:ElectionIdentifier IdNumber="06">
+                    <ns1:ElectionName>COUNTY</ns1:ElectionName>
+                </ns1:ElectionIdentifier>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="01">
+                        <ns1:ContestName>COUNTY CHARTER AMENDMENT</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>0</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:ReferendumOptionIdentifier IdNumber="01">Yes</ns1:ReferendumOptionIdentifier>
+                        <ns1:ReferendumOptionIdentifier IdNumber="02">No</ns1:ReferendumOptionIdentifier>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="02">
+                        <ns1:ContestName>CAT CATCHER</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>3</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>Regis Philbin</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>Oprah Winfrey</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="03">
+                                <ns1:CandidateName>Howard Stern</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="04">
+                                <ns1:CandidateName>Charlie Rose</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="05">
+                                <ns1:CandidateName>Rosie O'Donnell</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="06">
+                                <ns1:CandidateName>Carrie Fisher</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="07">
+                                <ns1:CandidateName>Steven Spielberg</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="08">
+                                <ns1:CandidateName>Queen Latifah</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="09">
+                                <ns1:CandidateName>Eddie Murphy</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="03">
+                        <ns1:ContestName>COUNTY COMMISSIONER</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>8</ns1:MaxVotes>
+                    <ns1:MinVotes>0</ns1:MinVotes>
+                    <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>David Packard</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>William Hewlett</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="03">
+                                <ns1:CandidateName>Steve Jobs</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="04">
+                                <ns1:CandidateName>Steve Wozniak</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="05">
+                                <ns1:CandidateName>William Shockely</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="06">
+                                <ns1:CandidateName>Gordon Moore</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="07">
+                                <ns1:CandidateName>Philip Kahn</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+            </ns1:Election>
+            <ns1:BallotIdentifier IdNumber="0001"/>
+        </ns1:Ballot>
+    </ns1:Ballots>
+</ns1:EML>

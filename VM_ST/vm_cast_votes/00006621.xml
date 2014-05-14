@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:EML Id="440" SchemaVersion="7.0" xmlns:ns1="urn:oasis:names:tc:evs:schema:eml">
+	<ns1:EMLHeader>
+		<ns1:TransactionId>0</ns1:TransactionId>
+		<ns1:OfficialStatusDetail>
+			<ns1:OfficialStatus>apporved</ns1:OfficialStatus>
+			<ns1:StatusDate>2013-07-17</ns1:StatusDate>
+		</ns1:OfficialStatusDetail>
+	</ns1:EMLHeader>
+	<ns1:CastVote>
+		<ns1:EventIdentifier IdNumber="01"/>
+		<ns1:Election>
+			<ns1:ElectionIdentifier IdNumber="01"/>
+			<ns1:Contest>
+				<ns1:ContestIdentifier IdNumber="01"/>
+				<ns1:Selection>
+					<ns1:CandidateIdentifier IdNumber="03"/>
+				</ns1:Selection>
+			</ns1:Contest>
+		</ns1:Election>
+		<ns1:Election>
+			<ns1:ElectionIdentifier IdNumber="02"/>
+			<ns1:Contest>
+				<ns1:ContestIdentifier IdNumber="01"/>
+				<ns1:Selection>
+					<ns1:CandidateIdentifier IdNumber="03"/>
+				</ns1:Selection>
+			</ns1:Contest>
+		</ns1:Election>
+		<ns1:Election>
+			<ns1:ElectionIdentifier IdNumber="02"/>
+			<ns1:Contest>
+				<ns1:ContestIdentifier IdNumber="01"/>
+				<ns1:Selection>
+					<ns1:CandidateIdentifier IdNumber="06"/>
+				</ns1:Selection>
+			</ns1:Contest>
+		</ns1:Election>
+		<ns1:Election>
+			<ns1:ElectionIdentifier IdNumber="02"/>
+			<ns1:Contest>
+				<ns1:ContestIdentifier IdNumber="01"/>
+				<ns1:Selection>
+					<ns1:CandidateIdentifier IdNumber="07"/>
+				</ns1:Selection>
+			</ns1:Contest>
+		</ns1:Election>
+		<ns1:Election>
+			<ns1:ElectionIdentifier IdNumber="02"/>
+			<ns1:Contest>
+				<ns1:ContestIdentifier IdNumber="02"/>
+				<ns1:Selection>
+					<ns1:CandidateIdentifier IdNumber="05"/>
+				</ns1:Selection>
+			</ns1:Contest>
+		</ns1:Election>
+		<ns1:Election>
+			<ns1:ElectionIdentifier IdNumber="02"/>
+			<ns1:Contest>
+				<ns1:ContestIdentifier IdNumber="02"/>
+				<ns1:Selection>
+					<ns1:CandidateIdentifier IdNumber="03"/>
+				</ns1:Selection>
+			</ns1:Contest>
+		</ns1:Election>
+		<ns1:BallotIdentifier IdNumber="0001"/>
+		<ns1:AuditInformation>
+			<ns1:ProcessingUnits>
+				<ns1:OriginatingDevice Role="">
+					<ns1:Name>DRE</ns1:Name>
+					<ns1:IdValue>000101</ns1:IdValue>
+				</ns1:OriginatingDevice>
+				<ns1:Other Type="VM" Role="">
+					<ns1:Name>OVVM Verification Module</ns1:Name>
+					<ns1:IdValue>v001</ns1:IdValue>
+				</ns1:Other>
+			</ns1:ProcessingUnits>
+		</ns1:AuditInformation>
+	</ns1:CastVote>
+</ns1:EML>

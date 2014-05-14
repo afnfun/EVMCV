@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:EML Id="410" SchemaVersion="7.0" xmlns:ns1="urn:oasis:names:tc:evs:schema:eml">
+    <ns1:EMLHeader>
+        <ns1:TransactionId>1</ns1:TransactionId>
+        <ns1:OfficialStatusDetail>
+            <ns1:OfficialStatus>approved</ns1:OfficialStatus>
+            <ns1:StatusDate>2012-04-12</ns1:StatusDate>
+        </ns1:OfficialStatusDetail>
+    </ns1:EMLHeader>
+    <ns1:Ballots>
+        <ns1:EventIdentifier IdNumber="01">
+            <ns1:EventName>STUDENT ELECTIONS</ns1:EventName>
+        </ns1:EventIdentifier>
+        <ns1:Ballot>
+            <ns1:Election>
+                <ns1:ElectionIdentifier IdNumber="01">
+                    <ns1:ElectionName>GENERAL ELECTION</ns1:ElectionName>
+                </ns1:ElectionIdentifier>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="01">
+                        <ns1:ContestName>STUDENT REPRESENTATIVE</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>1</ns1:MaxVotes>
+                    <ns1:MinVotes>1</ns1:MinVotes>
+                    <ns1:MaxWriteIn>16</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>ANGELA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>BRUNO</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="03">
+                                <ns1:CandidateName>CLAUDIA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="04">
+                                <ns1:CandidateName>FABIO</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="05">
+                                <ns1:CandidateName>ISABELLA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="06">
+                                <ns1:CandidateName>MARCO</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+            </ns1:Election>
+            <ns1:Election>
+                <ns1:ElectionIdentifier IdNumber="02">
+                    <ns1:ElectionName>STUDENT UNION ELECTION</ns1:ElectionName>
+                </ns1:ElectionIdentifier>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="01">
+                        <ns1:ContestName>PRESIDENT</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>10</ns1:MaxVotes>
+                    <ns1:MinVotes>3</ns1:MinVotes>
+                    <ns1:MaxWriteIn>16</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>ANNA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>CRISTIANO</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="03">
+                                <ns1:CandidateName>DANIELA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="04">
+                                <ns1:CandidateName>LORENZO</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="05">
+                                <ns1:CandidateName>LAURA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="06">
+                                <ns1:CandidateName>MANUEL</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="07">
+                                <ns1:CandidateName>PIETRO</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="08">
+                                <ns1:CandidateName>ROSALINA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="09">
+                                <ns1:CandidateName>TEO</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+                <ns1:Contest>
+                    <ns1:ContestIdentifier IdNumber="02">
+                        <ns1:ContestName>COMMITTEE</ns1:ContestName>
+                    </ns1:ContestIdentifier>
+                    <ns1:ElectionType>not ordered</ns1:ElectionType>
+                    <ns1:MaxVotes>3</ns1:MaxVotes>
+                    <ns1:MinVotes>1</ns1:MinVotes>
+                    <ns1:MaxWriteIn>16</ns1:MaxWriteIn>
+                    <ns1:BallotChoices>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="01">
+                                <ns1:CandidateName>ANTONIO</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="02">
+                                <ns1:CandidateName>CARLA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="03">
+                                <ns1:CandidateName>LUIGI</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="04">
+                                <ns1:CandidateName>LENA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="05">
+                                <ns1:CandidateName>SIMONE</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="06">
+                                <ns1:CandidateName>SUSANNA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="07">
+                                <ns1:CandidateName>VIVIANA</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="08">
+                                <ns1:CandidateName>WALTER</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                        <ns1:Candidate>
+                            <ns1:CandidateIdentifier IdNumber="09">
+                                <ns1:CandidateName>ZOE</ns1:CandidateName>
+                            </ns1:CandidateIdentifier>
+                            <ns1:StatusDetails/>
+                        </ns1:Candidate>
+                    </ns1:BallotChoices>
+                </ns1:Contest>
+            </ns1:Election>
+            <ns1:BallotIdentifier IdNumber="0001"/>
+        </ns1:Ballot>
+    </ns1:Ballots>
+</ns1:EML>

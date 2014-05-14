@@ -1,0 +1,593 @@
+2013-07-15 01:41:21.826366 : Error(101)!! There was 14 messages missing between the last command (activate) at (2013-07-15 01:40:43.034412) and current command (calibrate) at (calibrate). 
+2013-07-15 01:41:46.876639 : Error(103)!! Invalid command sequence. The command connect cannot come after (calibrate) that arrived recently at (2013-07-15 01:41:42.790119).
+Message : You can not run (connect) command while you are in vote cast session! Exit the vote cast session first.
+ 
+2013-07-15 01:41:58.034168 : Error(103)!! Invalid command sequence. The command activate cannot come after (calibrate) that arrived recently at (2013-07-15 01:41:42.790119).
+Message : You can not run (activate) command while you are in vote cast session! Exit the vote cast session first. 
+ 
+2013-07-15 01:42:35.917910 : Error(101)!! There was 2 messages missing between the last command () at () and current command (calibrate) at (calibrate). 
+2013-07-15 03:22:21.423880 : Error(101)!! There was 10 messages missing between the last command (report) at (2013-07-15 01:43:43.838933) and current command (calibrate) at (calibrate). 
+2013-07-15 08:50:15.612546 : Error(101)!! There was 16 messages missing between the last command (report) at (2013-07-15 03:23:06.473991) and current command (connect) at (connect). 
+2013-07-15 08:50:52.603054 : Error(101)!! There was 1 messages missing between the last command (select) at (2013-07-15 08:50:46.946784) and current command (votercast) at (votercast). 
+2013-07-17 00:28:59.564520 : Error(101)!! There was 3 messages missing between the last command () at () and current command (calibrate) at (calibrate). 
+2013-07-17 10:54:19.259260 : Error(101)!! There was 7 messages missing between the last command () at () and current command (calibrate) at (calibrate). 
+2013-07-17 10:55:17.809151 : Error(101)!! There was 9 messages missing between the last command (calibrate) at (2013-07-17 10:54:57.718272) and current command (calibrate) at (calibrate). 
+2013-07-17 10:56:05.229415 : Error(101)!! There was 8 messages missing between the last command (calibrate) at (2013-07-17 10:54:57.718272) and current command (calibrate) at (calibrate). 
+2013-07-17 10:58:38.418406 : Error(101)!! There was 11 messages missing between the last command () at () and current command (calibrate) at (calibrate). 
+2013-07-17 10:59:45.933311 : Error(101)!! There was 1 messages missing between the last command () at () and current command (calibrate) at (calibrate). 
+2013-07-17 10:59:51.894716 : Error(101)!! There was 3 messages missing between the last command (calibrate) at () and current command (calibrate) at (calibrate). 
+2013-07-17 11:00:07.852448 : Error(101)!! There was 8 messages missing between the last command (calibrate) at () and current command (calibrate) at (calibrate). 
+2013-07-17 11:00:20.147893 : Error(101)!! There was 7 messages missing between the last command (calibrate) at () and current command (calibrate) at (calibrate). 
+2013-07-17 11:00:24.964299 : Error(101)!! There was 2 messages missing between the last command (calibrate) at (2013-07-17 11:00:21.616055) and current command (calibrate) at (calibrate). 
+2013-07-17 11:03:22.381082 : Error(101)!! There was 2 messages missing between the last command (calibrate) at (2013-07-17 11:02:24.877053) and current command (calibrate) at (calibrate). 
+2013-07-17 11:03:24.452294 : Error(101)!! There was 1 messages missing between the last command (calibrate) at (2013-07-17 11:02:24.877053) and current command (calibrate) at (calibrate). 
+2013-07-17 11:04:40.746757 : Error(101)!! There was 4 messages missing between the last command (calibrate) at (2013-07-17 11:03:43.392780) and current command (calibrate) at (calibrate). 
+2013-07-17 11:05:19.195838 : Error(101)!! There was 7 messages missing between the last command () at () and current command (calibrate) at (calibrate). 
+2013-07-17 11:06:52.865348 : Error(101)!! There was 5 messages missing between the last command (calibrate) at (2013-07-17 11:05:22.391445) and current command (calibrate) at (calibrate). 
+2013-07-17 11:07:35.451139 : Error(101)!! There was 10 messages missing between the last command () at () and current command (calibrate) at (calibrate). 
+2013-07-17 11:07:53.765974 : Error(101)!! There was 9 messages missing between the last command (calibrate) at (2013-07-17 11:07:37.455959) and current command (calibrate) at (calibrate). 
+2013-07-17 11:08:00.217236 : Error(101)!! There was 2 messages missing between the last command (calibrate) at (2013-07-17 11:07:37.455959) and current command (calibrate) at (calibrate). 
+2013-07-17 11:08:07.999224 : Error(101)!! There was 2 messages missing between the last command (calibrate) at (2013-07-17 11:08:03.372810) and current command (calibrate) at (calibrate). 
+2013-07-17 11:08:57.281749 : Error(101)!! There was 1 messages missing between the last command (activate) at (2013-07-17 11:08:41.473420) and current command (cancel) at (cancel). 
+2013-07-17 11:08:57.281926 : Error (120)!! Unexpected behavious!! Canceled option ID 01010101 is not selected before! 
+2013-07-17 11:09:46.517796 : Error(101)!! There was 4 messages missing between the last command () at () and current command (calibrate) at (calibrate). 
+2013-07-17 11:17:22.909326 : Error(101)!! There was 1 messages missing between the last command (report) at (2013-07-17 11:16:01.023092) and current command (calibrate) at (calibrate). 
+2013-07-17 12:10:41.622133 : Error(101)!! There was 16 messages missing between the last command (activate) at (2013-07-17 12:10:01.192895) and current command (officercancel) at (officercancel). 
+2013-07-17 12:10:41.622458 : Error (111)!!Error (110)!! Conflict vote identifiers! The vote has been forced to be canceled by the officer 
+Message: the Vote (00000000) canceled by the officer successfuly.The reason is Bad Communication
+ 
+2013-07-17 13:25:33.171115 : Error(101)!! There was 16 messages missing between the last command (close) at (2013-07-17 13:25:09.334751) and current command (calibrate) at (calibrate). 
+2013-07-17 13:34:58.552787 : Error(101)!! There was 1 messages missing between the last command (select) at (2013-07-17 13:34:53.679005) and current command (review) at (review). 
+2013-09-12 18:25:27.104064 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.345135 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.395888 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.447841 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.500628 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.552138 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.604239 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.656006 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.707467 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.760033 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.813153 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.865878 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.919420 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:27.970906 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.023332 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.075756 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.128131 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.180754 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.234601 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.287812 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.340661 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.393067 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.446000 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.500291 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.552119 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.607325 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.659544 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.712295 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.765075 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.819742 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.872601 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.926486 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:28.980636 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.034453 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.087511 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.141578 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.194085 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.247208 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.300283 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.354490 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.407657 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.460555 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.513213 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.566097 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.620406 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.674171 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.728208 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.781348 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.835615 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.888849 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.941714 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:29.994842 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.049441 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.105621 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.159747 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.212383 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.265390 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.320109 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.373477 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.426161 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.479394 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.531876 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.586284 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.640418 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.694126 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.747064 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.800038 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.855899 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.909570 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:30.963396 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.017661 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.069953 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.122560 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.175441 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.228665 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.282323 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.338113 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.390529 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.443565 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.498244 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.551700 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.604780 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.657684 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.711646 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.764270 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.819475 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.874642 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.927720 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:31.980270 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.033272 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.087324 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.140607 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.193205 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.246667 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.299571 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.352560 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.407412 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.461379 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.514239 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.568183 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.621127 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.673181 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.726105 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.779983 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.833051 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.886747 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.939797 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:32.992693 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.045666 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.100936 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.155156 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.209843 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.264934 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.318275 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.373005 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.428239 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.481334 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.534125 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.587243 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.641987 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.694766 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.749338 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.803722 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.858470 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.910867 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:33.962973 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.017799 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.071049 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.124617 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.177153 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.230706 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.283686 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.336318 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.389396 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.441917 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.498503 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.551561 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.604811 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.659157 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.711973 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.765198 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.818436 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.873282 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.927699 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:34.981231 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.033777 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.086649 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.139730 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.192808 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.245074 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.297728 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.350672 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.404365 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.457500 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.510340 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.563539 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.616820 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.669891 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.723396 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.776452 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.829501 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.884120 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.936319 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:35.989928 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.044134 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.099040 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.152023 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.205062 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.257921 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.311005 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.365655 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.420028 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.474831 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.531073 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.583809 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.637083 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.689406 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.743043 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.796326 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.850240 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.905678 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:36.960608 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.014566 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.066802 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.120221 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.172920 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.227134 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.280811 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.333868 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.386405 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.440062 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.493820 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.547390 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.600569 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.655529 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.709890 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.762785 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.815890 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.870101 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.924118 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:37.978277 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.031822 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.085679 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.141945 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.195048 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.248166 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.302807 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.357299 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.410772 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.464816 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.517870 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.570897 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.624891 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.677723 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.731772 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.784939 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.838078 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.892397 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:38.946116 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.000570 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.052809 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.106863 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.161179 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.214461 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.266697 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.319229 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.372299 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.428251 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.481629 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.536350 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.590946 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.643972 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.697604 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.750697 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.803668 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.857189 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.910243 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:39.964759 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.017702 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.071756 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.125958 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.180222 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.234498 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.288548 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.342459 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.395262 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.448547 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.502885 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.557281 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.609510 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.662389 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.714969 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.767479 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.822800 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.876909 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.930598 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:40.983651 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.037144 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.091641 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.146038 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.200854 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.255465 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.309444 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.362546 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.416008 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.470665 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.524369 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.577945 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.630850 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.684118 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.738549 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.792189 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.845352 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.899253 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:41.951986 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.007046 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.059763 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.112932 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.168548 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.221241 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.273755 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.327374 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.380252 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.436319 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.489460 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.542267 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.595258 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.648992 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.702108 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.756100 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.809101 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.862210 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.915875 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:42.969609 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.023249 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.076551 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.130553 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.184687 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.238897 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.291660 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.343933 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.398619 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.452728 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.506502 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.560399 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.680460 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.734298 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.787068 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.838962 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.898971 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:43.951909 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.006088 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.060294 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.112537 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.166521 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.220423 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.272833 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.325826 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.379003 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.431948 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.486664 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.539666 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.592497 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.645154 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.699977 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.752957 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.807023 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.861191 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.915634 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:44.968378 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.021981 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.076035 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.130680 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.184148 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.238199 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.291440 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.344471 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.399553 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.452560 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.506988 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.561594 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.615165 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.669787 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.722624 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.775258 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.828350 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.881040 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.934184 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:45.987091 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.039664 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.093048 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.147595 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.201324 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.255580 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.308652 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.363422 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.417108 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.470941 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.524449 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.577588 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.631051 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.684883 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.738468 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.791385 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.844968 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.898768 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:46.952228 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.004397 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.057462 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.110230 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.164056 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.217585 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.270138 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.323733 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.376039 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.431595 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.485562 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.539414 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.592258 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.644564 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.697221 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.750857 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.805269 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.858838 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.912311 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:47.965291 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.018231 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.071928 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.127026 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.180243 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.233096 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.286165 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.339760 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.395448 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.448356 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.501825 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.555116 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.607517 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.661450 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.715072 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.768031 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.820522 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.873140 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.929220 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:48.982820 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.035645 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.088687 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.141694 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.197675 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.251402 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.304563 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.359362 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.412567 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.465965 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.518917 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.572657 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.627048 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.680790 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.734223 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.787140 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.839961 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.892443 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.944407 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:49.997293 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.050262 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.103195 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.156273 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.208228 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.260523 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.313316 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.367445 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.420309 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.472906 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.525970 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.579748 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.633545 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.687766 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.742997 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.797452 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.850661 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.905799 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:50.960503 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.013869 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.066765 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.121486 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.174245 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.228458 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.281446 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.334089 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.386828 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.440240 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.494694 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.547598 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.600653 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.653359 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.705665 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.761185 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.813073 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.866513 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.921260 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:51.974091 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.027691 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.080631 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.133361 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.186010 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.239075 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.293459 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.346131 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.400673 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.453561 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.508115 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.560830 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.613706 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.669499 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.723921 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.776497 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.830407 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.884170 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.938439 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:52.992232 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.045365 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.099209 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.152179 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.205163 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.258873 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.312454 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.365530 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.417665 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.470723 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.524224 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.577263 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:25:53.630148 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:35.628233 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:35.731940 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:36.547948 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:36.650374 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:36.805301 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:36.857238 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:36.960837 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:37.987631 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.142688 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.298199 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.350460 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.454174 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.661032 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.713291 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.765779 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.870059 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.923517 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:38.976486 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:39.945591 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:40.205302 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:40.413382 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:40.874827 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:40.979367 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.083685 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.136140 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.242064 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.295245 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.400714 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.455723 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.561238 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.673993 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.728906 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.835490 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.889134 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:41.992175 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:42.046662 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:42.151636 : Error (102)!! Bad verification message. Command digit is out of range! 
+2013-09-12 18:31:42.257962 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:42.311915 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:42.417487 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:42.472293 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:42.578686 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:42.632723 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:42.737697 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:42.842930 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:42.897395 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:31:43.003497 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-12 18:37:30.328261 : Error(103)!! Invalid command sequence. The command review cannot come after (votercast) that arrived recently at (2013-09-12 18:37:22.326292).
+Message : You can not run (review) command  while the vote cast session is not activated! Activate cast session first.
+ 
+2013-09-26 14:58:30.524021 : Error(101)!! There was 12 messages missing between the last command () at () and current command (report) at (report). 
+2013-09-26 14:58:42.800868 : Error(101)!! There was 3 messages missing between the last command (report) at () and current command (connect) at (connect). 
+2013-09-26 14:58:58.596560 : Error (108)!! Bad vote ID. The Vote ID (6502) is used before!! 
+2013-09-26 14:59:01.716903 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-26 14:59:02.639455 : Error(101)!! There was 16 messages missing between the last command (activate) at (2013-09-26 14:58:58.596214) and current command (activate) at (activate). 
+2013-09-26 14:59:23.460624 : Error(101)!! There was 8 messages missing between the last command (activate) at (2013-09-26 14:58:58.596214) and current command (votercast) at (votercast). 
+2013-09-26 14:59:23.460914 : Error (110)!! The vote ID used to cast this session (00006502) is different than the vote ID used in session opening (00006501)! This may means that no one of them are saved. 
+2013-09-26 14:59:25.664223 : Error (102)!! Bad verification message. Message length is under the acceptable one! 
+2013-09-26 14:59:25.820788 : Error(103)!! Invalid command sequence. The command votercast cannot come after (votercast) that arrived recently at (2013-09-26 14:58:58.596214).
+Message : You can not run (votercast) command  while the vote cast session is not activated! Activate cast session first.
+ 

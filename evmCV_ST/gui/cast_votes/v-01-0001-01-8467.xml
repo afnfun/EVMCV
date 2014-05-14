@@ -1,0 +1,15 @@
+<CastVote ElectionID="01" PollingPlaceID="0001" PollingMachineID="01" BallotID="0001" VoteNumber="8467" >
+	<Contests>
+		<Contest ContestID="1">
+			<Option>01010102</Option>
+		</Contest>
+		<Contest ContestID="2">
+			<Option>01020102</Option>
+			<Option>01020104</Option>
+			<Option>01020109</Option>
+		</Contest>
+		<Contest ContestID="3">
+			<Option>01020201</Option>
+		</Contest>
+	</Contests>
+</CastVote>

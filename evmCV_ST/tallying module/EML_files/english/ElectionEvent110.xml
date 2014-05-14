@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:EML Id="110" SchemaVersion="7.0" xmlns:ns1="urn:oasis:names:tc:evs:schema:eml">
+    <ns1:EMLHeader>
+        <ns1:TransactionId/>
+        <ns1:OfficialStatusDetail>
+            <ns1:OfficialStatus>approved</ns1:OfficialStatus>
+            <ns1:StatusDate>2012-11-30</ns1:StatusDate>
+        </ns1:OfficialStatusDetail>
+    </ns1:EMLHeader>
+    <ns1:ElectionEvent>
+        <ns1:ElectionControl>
+            <ns1:EventIdentifier IdNumber="01">
+                <ns1:EventName>Santa Clara Election</ns1:EventName>
+            </ns1:EventIdentifier>
+            <ns1:ElectionIdentifier DisplayOrder="01" IdNumber="0001">
+                <ns1:ElectionName>General Election</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:ElectionDate Type="yyy-mm-dd">
+                <ns1:SingleDate>2012-12-01</ns1:SingleDate>
+            </ns1:ElectionDate>
+            <ns1:ElectionType>General</ns1:ElectionType>
+            <ns1:ElectionJurisdiction>County</ns1:ElectionJurisdiction>
+            <ns1:Languages>
+                <ns1:Language>English</ns1:Language>
+                <ns1:Language>Arabic</ns1:Language>
+                <ns1:DefaultLanguage>English</ns1:DefaultLanguage>
+            </ns1:Languages>
+        </ns1:ElectionControl>
+        <ns1:Election>
+            <ns1:ElectionIdentifier IdNumber="01">
+                <ns1:ElectionName>PRESIDENCY</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="01">
+                    <ns1:ContestName>PRESIDENT &amp; VICEPRESIDENT</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>128</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+                <ns1:PollingPlace Channel="polling" IdNumber="0002">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The Red Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+        </ns1:Election>
+        <ns1:Election>
+            <ns1:ElectionIdentifier IdNumber="02">
+                <ns1:ElectionName>CONGRESSIONAL</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="01">
+                    <ns1:ContestName>US SENATOR</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="02">
+                    <ns1:ContestName>US REPRESENTATIVE</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>128</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+        </ns1:Election>
+        <ns1:Election>
+            <ns1:ElectionIdentifier IdNumber="03">
+                <ns1:ElectionName>STATE</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="01">
+                    <ns1:ContestName>TREASURER</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="02">
+                    <ns1:ContestName>ATTORNEY GENERAL</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="03">
+                    <ns1:ContestName>COMMISSIONER OF EDUCATION</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+        </ns1:Election>
+        <ns1:Election>
+            <ns1:ElectionIdentifier IdNumber="04">
+                <ns1:ElectionName>LEGISLATIVE</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="01">
+                    <ns1:ContestName>STATE SENATOR</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="02">
+                    <ns1:ContestName>STATE ASSEMBLY</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+        </ns1:Election>
+        <ns1:Election>
+            <ns1:ElectionIdentifier IdNumber="05">
+                <ns1:ElectionName>CONSTITUTIONAL AMENDMENT</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="01">
+                    <ns1:ContestName>CALIFORNIA TRANSPORTATION INITIATIVE</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="02">
+                    <ns1:ContestName>CALIFORNIA UNIVERSAL HEALTH CARE</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+        </ns1:Election>
+        <ns1:Election>
+            <ns1:ElectionIdentifier IdNumber="06">
+                <ns1:ElectionName>COUNTY</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="01">
+                    <ns1:ContestName>COUNTY CHARTER AMENDMENT</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>FPP</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="02">
+                    <ns1:ContestName>CAT CATCHER</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>block</ns1:VotingMethod>
+                <ns1:MaxVotes>3</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+            <ns1:Contest>
+                <ns1:ContestIdentifier IdNumber="03">
+                    <ns1:ContestName>COUNTY COMMISSIONER</ns1:ContestName>
+                </ns1:ContestIdentifier>
+                <ns1:VotingMethod>IRV</ns1:VotingMethod>
+                <ns1:MaxVotes>1</ns1:MaxVotes>
+                <ns1:MinVotes>0</ns1:MinVotes>
+                <ns1:MaxWriteIn>64</ns1:MaxWriteIn>
+                <ns1:PollingPlace Channel="polling" IdNumber="0001">
+                    <ns1:PhysicalLocation>
+                        <ns1:PlaceName>The White Poll</ns1:PlaceName>
+                        <ns1:Address>
+                            <ns2:FreeTextAddress xmlns:ns2="urn:oasis:names:tc:ciq:xal:4">
+                                <ns2:AddressLine>Street, Zip, City, Country</ns2:AddressLine>
+                            </ns2:FreeTextAddress>
+                        </ns1:Address>
+                        <ns1:PollingStation IdNumber="0001"/>
+                        <ns1:PollingStation IdNumber="0002"/>
+                        <ns1:PollingStation IdNumber="0003"/>
+                    </ns1:PhysicalLocation>
+                </ns1:PollingPlace>
+            </ns1:Contest>
+        </ns1:Election>
+        <ns1:EventDate>
+            <ns1:Start>2012-12-01</ns1:Start>
+            <ns1:End>2012-12-01</ns1:End>
+        </ns1:EventDate>
+    </ns1:ElectionEvent>
+</ns1:EML>

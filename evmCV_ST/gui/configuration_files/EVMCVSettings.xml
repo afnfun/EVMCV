@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EVMPRoSetting>
+   <!--Fleeing Voter Timeout in Seconds-->
+	<FVTimeOut>6000</FVTimeOut>
+	<Intro_Time>20</Intro_Time>
+	<Screen_Width>1280</Screen_Width>
+	<Screen_Height>680</Screen_Height>
+	<Primary_Password>53b74be8b295b733fdfafbd7d2a22b1686733740de7fdc592b26cf3e1874cfce158170ce9230e24696331a61829244e5d9f48abdacc9ffa8c4cb498724844cf8</Primary_Password>
+	<Secondary_Password>ba6e18f30a6269248d404687ebddf5a312da939b9442739edb188c2d6b7d74e772593043d25e9204ff1333d88d02bbeece2fd61e770876aa7f984382f71173c9</Secondary_Password>
+</EVMPRoSetting>

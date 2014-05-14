@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:EML Id="710" SchemaVersion="7.0" xmlns:ns1="urn:oasis:names:tc:evs:schema:eml">
+    <ns1:EMLHeader>
+    	  <ns1:TransactionId></ns1:TransactionId>
+        <ns1:OfficialStatusDetail>
+            <ns1:OfficialStatus>approved</ns1:OfficialStatus>
+            <ns1:StatusDate>2012-11-01</ns1:StatusDate>
+        </ns1:OfficialStatusDetail>
+    </ns1:EMLHeader>
+    <ns1:VmSettings>
+        <ns1:EventIdentifier DRE_ID="02" OVVM_ID="02"/>
+        <ns1:Settings IdNumber="000000041">
+            <ns1:PollingPlaceID>0001</ns1:PollingPlaceID>
+            <ns1:PollingStationID>01</ns1:PollingStationID>
+            <ns1:BallotIdentifireID>0001</ns1:BallotIdentifireID>
+        </ns1:Settings>
+        <ns1:Settings IdNumber="00000022">
+            <ns1:PollingPlaceID>0001</ns1:PollingPlaceID>
+            <ns1:PollingStationID>02</ns1:PollingStationID>
+            <ns1:BallotIdentifireID>0001</ns1:BallotIdentifireID>
+        </ns1:Settings>
+        <ns1:Settings IdNumber="00000023">
+            <ns1:PollingPlaceID>0001</ns1:PollingPlaceID>
+            <ns1:PollingStationID>03</ns1:PollingStationID>
+            <ns1:BallotIdentifireID>0001</ns1:BallotIdentifireID>
+        </ns1:Settings>
+    </ns1:VmSettings>
+    <ns1:VmSettings>
+        <ns1:EventIdentifier DRE_ID="01" OVVM_ID="01"/>
+        <ns1:Settings IdNumber="00000001">
+            <ns1:PollingPlaceID>0001</ns1:PollingPlaceID>
+            <ns1:PollingStationID>01</ns1:PollingStationID>
+            <ns1:BallotIdentifireID>0001</ns1:BallotIdentifireID>
+        </ns1:Settings>
+        <ns1:Settings IdNumber="00000002">
+            <ns1:PollingPlaceID>0001</ns1:PollingPlaceID>
+            <ns1:PollingStationID>02</ns1:PollingStationID>
+            <ns1:BallotIdentifireID>0001</ns1:BallotIdentifireID>
+        </ns1:Settings>
+        <ns1:Settings IdNumber="00000003">
+            <ns1:PollingPlaceID>0001</ns1:PollingPlaceID>
+            <ns1:PollingStationID>03</ns1:PollingStationID>
+            <ns1:BallotIdentifireID>0001</ns1:BallotIdentifireID>
+        </ns1:Settings>
+    </ns1:VmSettings>
+    <ns1:options>
+    	<ns1:option DRE_code="01010100" OVVM_code="01010100"></ns1:option>
+    	<ns1:option DRE_code="01010101" OVVM_code="01010101"></ns1:option>
+    	<ns1:option DRE_code="01010102" OVVM_code="01010102"></ns1:option>
+    	<ns1:option DRE_code="01010103" OVVM_code="01010103"></ns1:option>
+    	<ns1:option DRE_code="01010104" OVVM_code="01010104"></ns1:option>
+    	<ns1:option DRE_code="01010105" OVVM_code="01010105"></ns1:option>
+    	<ns1:option DRE_code="01010106" OVVM_code="01010106"></ns1:option>
+    	<ns1:option DRE_code="01010107" OVVM_code="01010107"></ns1:option>
+   	<ns1:option DRE_code="01020100" OVVM_code="01020100"></ns1:option>
+   	<ns1:option DRE_code="01020101" OVVM_code="01020101"></ns1:option>
+    	<ns1:option DRE_code="01020102" OVVM_code="01020102"></ns1:option>
+    	<ns1:option DRE_code="01020103" OVVM_code="01020103"></ns1:option>
+    	<ns1:option DRE_code="01020104" OVVM_code="01020104"></ns1:option>
+    	<ns1:option DRE_code="01020105" OVVM_code="01020105"></ns1:option>
+    	<ns1:option DRE_code="01020106" OVVM_code="01020106"></ns1:option>
+    	<ns1:option DRE_code="01020107" OVVM_code="01020107"></ns1:option>
+    	<ns1:option DRE_code="01020108" OVVM_code="01020108"></ns1:option>
+    	<ns1:option DRE_code="01020109" OVVM_code="01020109"></ns1:option>
+    	<ns1:option DRE_code="01020200" OVVM_code="01020200"></ns1:option>
+    	<ns1:option DRE_code="01020201" OVVM_code="01020201"></ns1:option>
+    	<ns1:option DRE_code="01020202" OVVM_code="01020202"></ns1:option>
+    	<ns1:option DRE_code="01020203" OVVM_code="01020203"></ns1:option>
+    	<ns1:option DRE_code="01020204" OVVM_code="01020204"></ns1:option>
+    	<ns1:option DRE_code="01020205" OVVM_code="01020205"></ns1:option>
+    	<ns1:option DRE_code="01020206" OVVM_code="01020206"></ns1:option>
+    	<ns1:option DRE_code="01020207" OVVM_code="01020207"></ns1:option>
+    	<ns1:option DRE_code="01020208" OVVM_code="01020208"></ns1:option>
+    	<ns1:option DRE_code="01020209" OVVM_code="01020209"></ns1:option>
+    </ns1:options>
+    <ns1:Reasons>
+        <ns1:Reason IdNumber="00">None</ns1:Reason>
+        <ns1:Reason IdNumber="01">Fleeing Voter</ns1:Reason>
+        <ns1:Reason IdNumber="02">Bad Communication</ns1:Reason>
+    </ns1:Reasons>
+</ns1:EML>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:EML Id="630" SchemaVersion="7.0" xmlns:ns1="urn:oasis:names:tc:evs:schema:eml">
+    <ns1:EMLHeader>
+        <ns1:TransactionId>01</ns1:TransactionId>
+        <ns1:OfficialStatusDetail>
+            <ns1:OfficialStatus>approved</ns1:OfficialStatus>
+            <ns1:StatusDate>2012-11-01</ns1:StatusDate>
+        </ns1:OfficialStatusDetail>
+    </ns1:EMLHeader>
+    <ns1:OptionsList>
+        <ns1:EventIdentifier IdNumber="01">
+            <ns1:EventName>General Election, Santa Clara</ns1:EventName>
+        </ns1:EventIdentifier>
+        <ns1:Election>
+            <ns1:ElectionIdentifier IdNumber="09">
+                <ns1:ElectionName>Transportation Initiative</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:Proposal>
+                <ns1:ProposalItem Lang="English" ProposalIdentifier="01">
+                    <ns1:ProposalText>Scope: Constitutional Amendment Article X, Section 19
+Title: California Transportation Initiative For Statewide Solor
+        Powered Magnetic Levitation System
+Description:     To reduce traffic and increase travel alternatives, this amendment
+      provides for development of a high speed solor powered magnetic
+      levitation system to run along Interstate 5.  Construction to begin
+      November 1, 2004.</ns1:ProposalText>
+                </ns1:ProposalItem>
+            </ns1:Proposal>
+        </ns1:Election>
+        <ns1:Election>
+            <ns1:ElectionIdentifier IdNumber="09">
+                <ns1:ElectionName>Health care initiative</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:Proposal>
+                <ns1:ProposalItem Lang="English" ProposalIdentifier="02">
+                    <ns1:ProposalText>Scope: Constitutional Amendment Article XII, Section 10
+Title: California Universal Health Care
+Description: To improve accessibility to quality health care and to reduce overall
+      health care costs, this amendment provides for the establishment of a
+      signle payer Health Care System for all Californians.  Implementation
+      to take effect 1/1/05.</ns1:ProposalText>
+                </ns1:ProposalItem>
+            </ns1:Proposal>
+        </ns1:Election>
+        <ns1:Election>
+            <ns1:ElectionIdentifier IdNumber="11">
+                <ns1:ElectionName>Term limits</ns1:ElectionName>
+            </ns1:ElectionIdentifier>
+            <ns1:Proposal>
+                <ns1:ProposalItem Lang="English" ProposalIdentifier="01">
+                    <ns1:ProposalText>Scope: Charter Amendment Referendum No. 1
+Title: Two Term Limit for County Commissioners
+Description: Shall the Santa Clara County Charter be amended to add Article II, Section 2.2: A provisions limiting Commissioners to two terms?
+    </ns1:ProposalText>
+                </ns1:ProposalItem>
+            </ns1:Proposal>
+        </ns1:Election>
+    </ns1:OptionsList>
+</ns1:EML>
